@@ -2,8 +2,13 @@
 layout: page
 title: Loc Tan Vo
 ---
-<h1>Blog Posts</h1>
-<ul class="posts">
+<header class="jumbotron">
+	<div class="container">
+		<h1 class="text-center">Loc Tan Vo</h1>
+		<p class="lead text-center">Mostly about  C#, mostly for myself</p>	
+	</div>
+</header>
+<ul class="list-unstyled">
 {% for post in site.posts %}
   <li><span>{{ post.date | date_to_string }}</span>......................<a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
