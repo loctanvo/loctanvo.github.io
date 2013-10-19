@@ -1,10 +1,37 @@
 ---
 layout: default
-title: Home | Loc Tan Vo
 ---
-<header>
-  <nav><a href="/">Home</a></nav>
+<!-- Static navbar -->
+<header class="navbar navbar-default navbar-fixed-top">
+  <nav class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+      	<div class="logo logo-small">
+            <span>L</span>
+            <span>o</span>
+            <span>c</span>
+            <span>T</span>
+            <span>a</span>
+            <span>n</span>
+            <span>V</span>
+            <span>o</span>
+            <span>©</span>
+    	</div>
+      </a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </nav>
 </header>
 <section>
-  {{ content }}
-</section>
+{{ content }}
+</section> 
