@@ -1,15 +1,14 @@
 ---
 layout: page
 title: Blog | Loc Tan Vo
-wolla: blog
 ---
-<header class="jumbotron">
+<header class="jumbotron jumbotron-custom">
 	<div class="container">
 		<h1 class="text-center">BLOG</h1>
 		<p class="text-center">Mostly about  C#, mostly for myself</p>	
 	</div>
 </header>
-<article class="container">
+<article class="container container-narrow">
 	<ul class="list-unstyled">
 	{% for post in site.posts %}
 	  <li><span>{{ post.date | date_to_string }}</span>......................<a href="{{ post.url }}">{{ post.title }}</a></li>
