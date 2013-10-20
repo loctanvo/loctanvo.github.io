@@ -23,9 +23,9 @@ body {
 /* Set the fixed height of the footer here */
 footer {
   height: 60px;
-  background-color: #272727;
+  background-color: #f16667;
   padding-top: 22px;
-  color: #35bdb2;
+  color: #fff;
   font-family: "century gothic","trebuchet ms","verdana","arial", "helvetica", "sans-serif";
   font-size: 12px;
 } 
@@ -103,4 +103,8 @@ nav ul li:hover{
   width: 20px;
   height: 20px;
   float:left;
+}
+
+header.border-top{
+  border-top: solid 2px #f16667;
 }
