@@ -10,6 +10,22 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
+HACKY STYLE
+<div class="custom-code">
+{% highlight cs %}
+public static IEnumerable<TOut> IfNotNullList<TIn, TOut>(this IEnumerable<TIn> me, Func<TIn, TOut> ifNotNull)
+{
+    return me == null ? Enumerable.Empty<TOut>() : me.Select(ifNotNull).ToList();
+}
+{% endhighlight %}
+</div>
+
+GIST STYLE
+
+<div class="custom-code">
+{% gist 7091848 %}
+</div>
+
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
 
 [jekyll-gh]: https://github.com/mojombo/jekyll

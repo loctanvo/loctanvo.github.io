@@ -14,7 +14,52 @@ title: About | Loc Tan Vo
 <p>
 Pellentesque sodales felis sit amet iaculis faucibus. Curabitur et lorem ante. Mauris sit amet molestie quam. Curabitur sed erat justo. Ut placerat velit eu enim semper molestie. Praesent vehicula enim et varius condimentum. Morbi vulputate massa lectus, a varius eros congue eu. Aliquam dapibus, odio et blandit ultricies, dolor arcu rutrum elit, sit amet vulputate neque enim eu erat. Nam sodales viverra dolor, eget varius risus posuere vitae. Phasellus vel porttitor nunc. Aenean id nulla et nulla blandit luctus nec eu metus. Sed at arcu lacus. Quisque hendrerit a ipsum ac imperdiet.
 </p>
-<!-- <script src="https://gist.github.com/loctanvo/8bc55e39f2a7dffdcf45.js"></script> -->
+<div class="custom-code">
+<div class="container">
+{% highlight cs %}
+public class With
+{
+    private readonly CultureInfo _cultureInfo;
+
+    private With(CultureInfo cultureInfo)
+    {
+        _cultureInfo = cultureInfo;
+    }
+
+    public static With InvariantCulture()
+    {
+        return new With(CultureInfo.InvariantCulture);
+    }
+
+    public static With Culture(CultureInfo cultureInfo)
+    {
+        return new With(cultureInfo);
+    }
+
+    public static With DecimalSeparator(string numberDecimalSeparator)
+    {
+        var numberformatInfo = new NumberFormatInfo { NumberDecimalSeparator = numberDecimalSeparator };
+        var culture = new CultureInfo("en", false) { NumberFormat = numberformatInfo };
+        return new With(culture);
+    }
+
+    public void Execute(Action action)
+    {
+        var originalCulture = Thread.CurrentThread.CurrentCulture;
+        try
+        {
+            Thread.CurrentThread.CurrentCulture = _cultureInfo;
+            action();
+        }
+        finally
+        {
+            Thread.CurrentThread.CurrentCulture = originalCulture;
+        }
+    }
+}
+{% endhighlight %}
+</div>
+</div>
 <p>
 Ut pharetra quam a justo mattis, at facilisis felis blandit. Sed varius porttitor orci. Fusce velit eros, scelerisque in iaculis hendrerit, rhoncus eget sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque mauris lacus, convallis id vestibulum ac, condimentum ut magna. Suspendisse quam odio, blandit in consequat in, iaculis sed mi. Sed sed dictum est, eu aliquam velit. Donec orci felis, vehicula eu vehicula non, tristique vel augue. Morbi placerat erat tortor. Pellentesque egestas venenatis leo fermentum consequat. Pellentesque dolor velit, rhoncus nec quam eget, congue placerat dolor. Morbi pellentesque tortor purus, nec fringilla tortor congue interdum.
 </p>

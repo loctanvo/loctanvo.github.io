@@ -23,7 +23,7 @@ body {
 /* Set the fixed height of the footer here */
 footer {
   height: 100px;
-  background-color: #35bdb2;
+  background-color: #a0bab7;
   padding-top: 22px;
   color: #fff;
   font-family: "century gothic","trebuchet ms","verdana","arial", "helvetica", "sans-serif";
@@ -40,11 +40,6 @@ footer {
   color: #FFF;
   height: 400px;
   text-shadow: 0px 0px 1px #aaa;
-}
-
-.container-narrow p{
-  max-width: 500px;
-  margin: inherit;
 }
 
 .navbar-default {
@@ -107,13 +102,7 @@ nav ul li:hover{
 }
 
 header.border-top{
-  border-top: solid 2px #35bdb2;
-}
-
-.airy p{
-  font-family: "museo_sans_500regular";
-  line-height: 24px;
-  margin: 20px auto;
+  border-top: solid 4px #a0bab7;
 }
 
 footer a{
@@ -124,4 +113,29 @@ footer a{
 footer a:hover{
   color: #3a3a3a;
   text-decoration: none;
+}
+
+.container-narrow p{
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.airy p{
+  font-family: "museo_sans_500regular";
+  line-height: 24px;
+}
+
+.custom-code{
+  background-color: #272822;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.custom-code pre{
+  margin: auto;
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  border-radius: 0;
+  display: table;
 }
