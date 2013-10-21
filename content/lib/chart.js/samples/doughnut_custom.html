@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Doughnut Chart</title>
+		<script src="../Chart.js"></script>
+		<meta name = "viewport" content = "initial-scale = 1, user-scalable = no">
+		<style>
+			canvas{
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" height="400px" width="400px"></canvas>
+	<script>
+
+		var doughnutData = [
+				{
+					value : 67,
+					color : "rgba(70, 191, 189, 1)"
+				},
+				{
+					value : 33,
+					color : "rgba(70, 191, 189,0.6)"
+				}
+			
+			];
+
+
+var options = {
+	//Boolean - Whether we should show a stroke on each segment
+	segmentShowStroke : true,
+	
+	//String - The colour of each segment stroke
+	segmentStrokeColor : "#FFF",
+	
+	//Number - The width of each segment stroke
+	segmentStrokeWidth : 2,
+	
+	//The percentage of the chart that we cut out of the middle.
+	percentageInnerCutout : 90,
+	
+	//Boolean - Whether we should animate the chart	
+	animation : true,
+	
+	//Number - Amount of animation steps
+	animationSteps : 100,
+	
+	//String - Animation easing effect
+	animationEasing : "easeOutBack",
+	
+	//Boolean - Whether we animate the rotation of the Doughnut
+	animateRotate : true,
+
+	//Boolean - Whether we animate scaling the Doughnut from the centre
+	animateScale : false,
+	
+	//Function - Will fire on animation completion.
+	onAnimationComplete : function(){
+		var canvas = document.getElementById("canvas");
+		var ctx = document.getElementById("canvas").getContext("2d");
+		var x = canvas.width / 2;
+		var y = canvas.height / 2;
+		ctx.font = "200px 'Century Gothic'";
+		ctx.textAlign = "center";
+		ctx.textBaseline = 'middle';
+		ctx.fillStyle = '#4D5360';
+		ctx.fillText("8", x, y-20);
+		ctx.font = "22px 'Century Gothic'";
+		ctx.fillText("HOURS coding per day", x, y+100);
+	}
+}
+
+	var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData, options);
+	
+	</script>
+	</body>
+</html>
