@@ -33,7 +33,7 @@ footer {
 /* BOOTSTRAP OVERRIDE
 -------------------------------------------------- */
 .jumbotron.jumbotron-custom{
-  background-image: url('/content/site/img/header.jpg');
+  background-image: url('/content/site/img/header.image.jpg');
   background-size: cover;
   background-position: 50% 65%;
   background-repeat: no-repeat;
