@@ -116,8 +116,9 @@ footer a:hover{
 }
 
 .container-narrow p{
-  max-width: 500px;
+  max-width: 550px;
   margin: 20px auto;
+  padding: 0 10px;
 }
 
 .airy p{
