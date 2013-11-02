@@ -220,5 +220,14 @@ h1.big-heading{
 
 .charts{
   padding: 0 15px;
-  margin:40px 0;
+  margin:50px 0;
+}
+
+.chart-legend{
+  position:absolute;
+  position: absolute;
+  top: 120px;
+  color: #a0bab7;
+  text-transform: uppercase;
+  left: 70px;
 }
