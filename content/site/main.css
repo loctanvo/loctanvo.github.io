@@ -86,8 +86,13 @@ nav ul li:hover{
 }
 
 .logo{  
+  font-family: "century gothic", "open sans", "sans-serif";
   text-align: center;
   text-transform: uppercase;
+}
+
+.logo span{
+  float:left;
 }
 
 .logo-small{
@@ -95,10 +100,34 @@ nav ul li:hover{
   font-size: 14px;
 }
 
+.logo-big{
+  width: 180px;
+  font-size:36px;
+}
+
 .logo-small span{
   width: 20px;
   height: 20px;
-  float:left;
+}
+
+.logo-big span{
+  width: 60px;
+  margin: 5px 0;
+}
+
+.logo-within-container{
+  margin: 76px auto;
+  overflow: hidden;
+}
+
+.logo-container{
+  height: 300px;
+  margin: 20% auto;
+  width: 300px;
+  border-radius: 150px;
+  background: #a0bab7;
+  color: #fff;
+  overflow: hidden;
 }
 
 header.border-top{
@@ -139,4 +168,57 @@ footer a:hover{
   border: none;
   border-radius: 0;
   display: table;
+}
+
+/* FULLPAGE BACKGROUND STYLES
+-------------------------------------------------- */
+.fullPage{
+   position: relative;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+h1.big-heading{
+  font-family: 'Arimo', 'Open Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: -3px;
+  font-size: 98px;
+  color: #444;
+  margin: 20% auto 30px auto;
+  text-transform: uppercase;
+}
+
+#day{
+  background: #272727;
+}
+
+#day h1{
+  color: #a0bab7;
+}
+
+#about a{
+  color: #F66;
+  font-size: 20px;
+}
+
+#day a:hover{
+  background-color: #4a4a4a;
+};
+
+.center-block{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#day canvas{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.charts{
+  padding: 0 15px;
+  margin:40px 0;
 }
