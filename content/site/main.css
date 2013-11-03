@@ -7,7 +7,10 @@ body {
   /* The html and body elements cannot have any padding or margin. */
 }
 
-
+body section, body article {
+-webkit-animation: appear 1200ms ease-in;
+-webkit-animation-fill-mode: both;
+}
 
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -185,7 +188,7 @@ h1.big-heading{
   letter-spacing: -3px;
   font-size: 98px;
   color: #444;
-  margin: 20% auto 30px auto;
+  margin: 10% auto 0px auto;
   text-transform: uppercase;
 }
 
@@ -220,14 +223,28 @@ h1.big-heading{
 
 .charts{
   padding: 0 15px;
-  margin:50px 0;
+  margin: 100px 0;
 }
 
 .chart-legend{
   position:absolute;
-  position: absolute;
-  top: 120px;
+  top: 80px;
   color: #a0bab7;
-  text-transform: uppercase;
-  left: 70px;
+  left: 50%;
+}
+
+.chart-legend h2{
+  font-size: 72px;
+}
+
+.coder{
+  margin-left:-72px;
+}
+
+.sleeper{
+  margin-left:-68px;
+}
+
+.father{
+  margin-left:-48px;
 }
