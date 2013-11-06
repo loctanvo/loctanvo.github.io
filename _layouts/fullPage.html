@@ -22,7 +22,7 @@
             <link rel="stylesheet" href="/content/site/main.css">
           </head>
           <body id="about">
-            <div id="home" class="fullPage">
+            <section id="home" class="fullPage">
               <div class="container">
                 <h1 class="logo-container">
                   <div class="logo logo-big logo-within-container">
@@ -43,23 +43,23 @@
                   <li><a href="/blog"><span class="glyphicon glyphicon-pencil"></span></a></li>
                 </ul>
               </div>
-            </div>
-            <div id="day" class="fullPage">
+            </section>
+            <section id="day" class="fullPage">
               <div class="container">
                 <h1 class="text-center big-heading">My Day</h1>
                 <div class="charts">
                   <div class="row">
                     <div class="col-md-4">
                       <canvas id="coder" class="center-block" width="300px" height="300px"></canvas>
-                      <div class="chart-legend hidden"><h3>8+<small> HOURS Of CODING</small></h3></div>
+                      <div class="chart-legend coder hidden text-center"><h2>8+<small> HOURS</small></h2><br/><div>CODER</div></div>
                     </div>
                     <div class="col-md-4">
                       <canvas id="sleeper" class="center-block" width="300px" height="300px"></canvas>
-                      <div class="chart-legend hidden"><h3>6<small>-ish HOURS OF SLEEP</small></h3></div>
+                      <div class="chart-legend sleeper hidden text-center"><h2>6<small>-ish HOURS</small></h2><br/><div>SLEEPER</div></div>
                     </div>
                     <div class="col-md-4">
                       <canvas id="father" class="center-block" width="300px" height="300px"></canvas>
-                      <div class="chart-legend hidden"><h3>ALWAYS<small> A FATHER</small></h3></div>
+                      <div class="chart-legend father hidden text-center"><h2>24<small>/7</small></h2><br/><div>FATHER</div></div>
                     </div>
                   </div>
                 </div>
@@ -69,8 +69,8 @@
                   <li><a class="scroll" href="#home"><span class="glyphicon glyphicon-chevron-up"></span></a></li>
                 </ul>
               </div>
-            </div>
-            <div id="social" class="fullPage">
+            </section>
+            <section id="social" class="fullPage">
               <div class="container">
                 <h1 class="text-center big-heading">Connect</h1>
                 <ul class="nav nav-pills nav-justified">
@@ -79,7 +79,7 @@
                   <li><a class="scroll" href="#day"><span class="glyphicon glyphicon-chevron-up"></span></a></li>
                 </ul>
               </div>
-            </div>
+            </section>
             <script src="/content/lib/bootstrap/assets/js/jquery.js"></script>
             <script src="/content/lib/bootstrap/dist/js/bootstrap.min.js"></script>
             <script src="/content/lib/jquery-waypoints/waypoints.min.js"></script>
@@ -140,7 +140,11 @@
               animationSteps : 100,
               
               //String - Animation easing effect
-              animationEasing : "easeOutBack"
+              animationEasing : "easeOutBack",
+
+              onAnimationComplete: function(){
+                $('.hidden').removeClass('hidden');
+              }
             }
 
 
@@ -148,8 +152,6 @@
                 var myDoughnut = new Chart(document.getElementById("coder").getContext("2d")).Doughnut(coder, options);  
                 var myDoughnut = new Chart(document.getElementById("sleeper").getContext("2d")).Doughnut(sleeper, options);  
                 var myDoughnut = new Chart(document.getElementById("father").getContext("2d")).Doughnut(father, options);
-
-                  $('.hidden').removeClass('hidden');
               });
 
             
