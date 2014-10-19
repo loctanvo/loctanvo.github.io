@@ -2,16 +2,16 @@
 title: "Mostly .NET - Mostly for me"
 email: loc.tan.vo@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Loc Tan Vo's personal website and blog. The blog posts are mostly technical,
+  and mostly about .NET development.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://www.loctanvo.com" # the base hostname & protocol for your site
 twitter_username: loctanvo
 github_username: loctanvo
 
 # Build settings
 markdown: kramdown
+exclude: ['resources']
 
 # Outputting
 permalink: pretty
