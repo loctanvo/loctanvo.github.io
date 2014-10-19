@@ -4,5 +4,31 @@
 
 h1 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 100;
+	font-weight: 500;
+	font-size: 72px;
+	color: #636363;
+}
+
+h1{
+	small {
+		font-family: 'Helvetica Neue', 'Raleway';
+		display: block;
+		font-size: 30px;
+		font-weight: 100;
+		margin-top: 20px;
+		color: #636363;
+	}
+}
+
+.text-area{
+	background-color: #FFF;
+}
+
+.intro{
+	background-color: #ddd;
+}
+
+.more{
+	background-color: #333;
+	color: #FFF;
 }

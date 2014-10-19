@@ -11,7 +11,7 @@ github_username: loctanvo
 
 # Build settings
 markdown: kramdown
-exclude: ['resources']
+exclude: ['resources', 'bower_components']
 
 # Outputting
 permalink: pretty
