@@ -20,6 +20,35 @@ h1{
 	}
 }
 
+.about-nav{		
+    list-style: none;
+    margin: 50px 0 0 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Helvetica Neue', 'Raleway';
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.about-nav li{
+    display:inline;
+    margin: 0 10px;
+}
+
+.about-nav a {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #636363;
+    text-decoration: none;
+    border: 1px solid #AAA;
+}
+
+.about-nav a:hover{
+	color: #FFF;
+	background-color: #636363;
+	border: 1px solid #636363;
+}
+
 .section .row {
 	height: 100%;
 }
@@ -35,15 +64,17 @@ h1{
 	vertical-align: middle;
 }
 
-.intro{
-	background-color: #ddd;
-	background-image: url('../content/images/back_lowerq.jpg');
+.section {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right bottom;
+	color: #636363;
 }
 
-.more{
-	background-color: #333;
-	color: #FFF;
+.intro{
+	background-image: url('../content/images/back_lowerq.jpg');
+}
+
+.about{
+	background-image: url('../content/images/front_lowerq.jpg');
 }
