@@ -20,8 +20,19 @@ h1{
 	}
 }
 
+.section .row {
+	height: 100%;
+}
+
 .text-area{
 	background-color: #FFF;
+	height: 100%;
+	display: table;
+}
+
+.text-area .content-wrapper{
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .intro{
