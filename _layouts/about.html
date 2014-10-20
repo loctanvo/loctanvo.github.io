@@ -30,6 +30,10 @@
 	<script>
 		$(document).ready(function() {
 		    $('#fullpage').fullpage();
+    		$('li a').first().click(function(){
+    			alert('clicked');
+    			$('.text-area.hidden').removeClass('hidden');
+    		})
 		});
 	</script>
 </html>
