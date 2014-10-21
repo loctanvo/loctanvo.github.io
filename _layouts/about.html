@@ -10,6 +10,7 @@
   </body>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <!-- This following line is needed in case of using the default easing option or when using another
    one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
@@ -31,8 +32,7 @@
 		$(document).ready(function() {
 		    $('#fullpage').fullpage();
     		$('li a').first().click(function(){
-    			alert('clicked');
-    			$('.text-area.hidden').removeClass('hidden');
+    			$('.text-area.more').toggle("slide", {}, 800);
     		})
 		});
 	</script>
