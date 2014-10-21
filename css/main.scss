@@ -72,7 +72,7 @@ h1{
 	color: #636363;
 }
 
-.intro{
+.intro-bg{
 	background-image: url('../content/images/back_lowerq.jpg');
 }
 
@@ -80,6 +80,10 @@ h1{
 	background-image: url('../content/images/front_lowerq.jpg');
 }
 
-.more{
-	border-left: 1px dotted;
+.border-right-dotted {
+	border-right: 1px dotted;
 }
+
+/*.more{
+	border-left: 1px dotted;
+}*/
