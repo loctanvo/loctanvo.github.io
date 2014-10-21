@@ -20,6 +20,10 @@ h1{
 	}
 }
 
+ul, li {
+	list-style: none;
+}
+
 .about-nav{		
     list-style: none;
     margin: 75px 0 0 0;
@@ -91,6 +95,15 @@ h1{
 
 .more a {
 	color: #A1BAB7;
+}
+
+.social a {
+	color: #636363;
+}
+
+.social a:hover {
+	color: #A1BAB7;
+	text-decoration: none;
 }
 
 p{
