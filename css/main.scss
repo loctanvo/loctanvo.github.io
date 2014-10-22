@@ -2,6 +2,15 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+html, body{
+	height: 100%;
+	background-image: url('../content/images/back_lowerq.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	color: #636363;
+}
+
 h1 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
@@ -40,6 +49,17 @@ ul, li {
 	list-style: none;
 }
 
+.site-wrapper{
+	display: table;
+	height: 100%;
+	width: 100%;
+	min-height: 100%;
+}
+
+.full-height{
+	height: 100%;
+	display: table-cell;
+}
 
 .about-nav{		
     list-style: none;
@@ -84,21 +104,6 @@ ul, li {
 .text-area .content-wrapper{
 	display: table-cell;
 	vertical-align: middle;
-}
-
-.section {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	color: #636363;
-}
-
-.intro-bg{
-	background-image: url('../content/images/back_lowerq.jpg');
-}
-
-.about{
-	background-image: url('../content/images/front_lowerq.jpg');
 }
 
 .border-right-dotted {
