@@ -36,7 +36,9 @@
 
     		function toggleMoreArea(){
     			$('.text-area.intro').toggleClass('border-right-dotted');
-    			$('.text-area.more').toggle("slide", {direction:'left', easing: "swing"}, 800);
+    			$('.text-area.more').toggleClass('hidden');
+    			// $('.text-area.more').toggle("slide", {}, 800);
+    			
     		}
 		});
 	</script>
