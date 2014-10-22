@@ -31,10 +31,18 @@
 	<script>
 		$(document).ready(function() {
 		    $('#fullpage').fullpage();
-    		$('li a').first().click(function(){
+    		$('a[href="#more"]').first().click(function(){
+    			toggleMoreArea();
+    		});
+
+			$('.close').click(function(){
+				toggleMoreArea();
+			});
+
+    		function toggleMoreArea(){
     			$('.text-area.intro').toggleClass('border-right-dotted');
     			$('.text-area.more').toggle("slide", {}, 800);
-    		})
+    		}
 		});
 	</script>
 </html>
