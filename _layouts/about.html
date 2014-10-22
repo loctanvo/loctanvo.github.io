@@ -30,7 +30,7 @@
 
 	<script>
 		$(document).ready(function() {
-		    $('#fullpage').fullpage();
+		    $('#fullpage').fullpage({scrollOverflow: true});
     		$('a[href="#more"]').first().click(function(){
     			toggleMoreArea();
 
@@ -42,7 +42,7 @@
 
     		function toggleMoreArea(){
     			$('.text-area.intro').toggleClass('border-right-dotted');
-    			$('.text-area.more').toggle("slide", {direction:'left'}, 800);
+    			$('.text-area.more').toggle("slide", {direction:'left', easing: "swing"}, 800);
     		}
 		});
 	</script>
