@@ -33,6 +33,7 @@
 		    $('#fullpage').fullpage();
     		$('a[href="#more"]').first().click(function(){
     			toggleMoreArea();
+
     		});
 
 			$('.close').click(function(){
@@ -41,7 +42,7 @@
 
     		function toggleMoreArea(){
     			$('.text-area.intro').toggleClass('border-right-dotted');
-    			$('.text-area.more').toggle("slide", {}, 800);
+    			$('.text-area.more').toggle("slide", {direction:'left'}, 800);
     		}
 		});
 	</script>
