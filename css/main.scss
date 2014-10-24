@@ -45,6 +45,9 @@ h2 small{
 ul, li {
 	list-style: none;
 }
+.intro {
+	position: fixed;
+}
 
 .site-wrapper{
 	display: table;
@@ -107,8 +110,8 @@ ul, li {
 	vertical-align: middle;
 }
 
-.border-right-dotted {
-	border-right: 1px dotted;
+.separator {
+	border-left: 1px dotted;
 }
 
 .img-smaller{
@@ -158,9 +161,9 @@ button.close-button{
 .visible-xs h1{
 	font-size: 38px;
 }
-s
+
 .visible-xs h1 small {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .visible-xs .about-nav {
@@ -169,6 +172,13 @@ s
 
 .visible-xs li a {
 	font-size: 12px;
-	padding: 10px 20px;
+	padding: 8px 16px;
 }
 
+.visible-xs .intro {
+	position: relative;
+}
+
+.visible-xs .separator {
+	border-top: 1px dotted;
+}
