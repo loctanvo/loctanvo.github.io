@@ -5,7 +5,7 @@ permalink: /blog/
 ---
 
 <div class="row full-height">
-  <div class="col-xs-6 text-center text-area intro">
+  <div class="col-xs-6 text-center text-area more hidden-xs">
     <div class="content-wrapper">
       <h1>Thank You<small>For showing interest in my blog</small></h1>
       <p>
@@ -19,6 +19,20 @@ permalink: /blog/
     </div>
   </div>
 </div>
+<div class="visible-xs">
+  <div class="text-center text-area intro">
+    <h1>Thank You<small>For showing interest in my blog</small></h1>
+      <p>
+        It's currently undergoing a re-design, and I hope to finish soon. Stay tuned, I'll be back. I promise.
+      </p>
+      <nav>
+        <ul class="about-nav">
+          <li><a href="/">BACK</a></li>
+        </ul>
+      </nav>
+  </div>
+</div>
+
 
 <!--   <h1 class="page-heading">Posts</h1>
 
