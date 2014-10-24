@@ -1,12 +1,26 @@
 ---
-layout: default
-title: Blog
+layout: about
+title: Loc Tan Vo | Blog
 permalink: /blog/
 ---
 
-<div class="home">
+<div class="row full-height">
+  <div class="col-xs-6 text-center text-area intro">
+    <div class="content-wrapper">
+      <h1>Thank You<small>For showing interest in my blog</small></h1>
+      <p>
+        It's currently undergoing a re-design, and I hope to finish soon. Stay tuned, I'll be back. I promise.
+      </p>
+      <nav>
+        <ul class="about-nav">
+          <li><a href="/">BACK</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
 
-  <h1 class="page-heading">Posts</h1>
+<!--   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -21,5 +35,4 @@ permalink: /blog/
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+ -->
