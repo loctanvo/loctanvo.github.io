@@ -1,0 +1,189 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+html, body{
+	color: #636363;
+	height: 100%;
+	min-height: 100%;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 58px;
+	color: #636363;
+}
+
+h1{
+	small {
+		font-family: 'Helvetica Neue', 'Raleway';
+		display: block;
+		font-size: 24px;
+		font-weight: 100;
+		margin-top: 20px;
+		color: #636363;
+	}
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 42px;
+	color: #636363;
+}
+
+h2 small{
+		font-family: 'Helvetica Neue', 'Raleway';
+		display: block;
+		font-size: 24px;
+		font-weight: 100;
+		margin: 20px;
+		color: #636363;
+}
+
+ul, li {
+	list-style: none;
+}
+.intro {
+	position: fixed;
+}
+
+.site-wrapper{
+	display: table;
+	height: 100%;
+	width: 100%;
+	min-height: 100%;
+	background-image: url('../content/images/back_lowerq.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.full-height{
+	height: 100%;
+	display: table-cell;
+}
+
+.about-nav{		
+    list-style: none;
+    margin: 60px 0 0 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Helvetica Neue', 'Raleway';
+    font-weight: 100;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.about-nav li{
+    display:inline;
+    margin: 0 10px;
+}
+
+.about-nav a {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #636363;
+    text-decoration: none;
+    border: 1px solid #AAA;
+}
+
+.about-nav a:hover{
+	color: #FFF;
+	background-color: #636363;
+	border: 1px solid #636363;
+}
+
+.section .row {
+	height: 100%;
+}
+
+.text-area{
+	background-color: #FFF;
+	height: 100%;
+	display: table;
+}
+
+.text-area .content-wrapper{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.separator {
+	border-left: 1px dotted;
+}
+
+.img-smaller{
+	width: 100px;
+	height: 100px;
+}
+
+.more a {
+	color: #A1BAB7;
+}
+
+.social a {
+	color: #636363;
+}
+
+.social a:hover {
+	color: #A1BAB7;
+	text-decoration: none;
+}
+
+p{
+	font-family: "Roboto Slab";
+	font-size: 16px;
+	padding: 20px;
+	line-height: 1.8em;
+	max-width: 300px;
+	margin: auto;
+}
+
+button.close-button{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+}
+
+.visible-xs .content-wrapper {
+	padding: 30px;
+}
+
+.visible-xs .text-area{
+	height: auto;
+	display: block;
+	overflow: hidden;
+	padding: 30px 0 30px 0;
+}
+
+.visible-xs h1{
+	font-size: 38px;
+}
+
+.visible-xs h1 small {
+	font-size: 16px;
+}
+
+.visible-xs .about-nav {
+	margin-top: 32px;
+}
+
+.visible-xs li a {
+	font-size: 12px;
+	padding: 8px 16px;
+}
+
+.visible-xs .intro {
+	position: relative;
+}
+
+.visible-xs .separator {
+	border-top: 1px dotted;
+}
+
+.visible-xs button.close-button{
+	padding: 230px 10px 0 0;
+}
