@@ -36,9 +36,11 @@
 
     		function toggleMoreArea(){
     			$('.text-area.more').toggleClass('separator');
-    			$('.text-area.more').toggleClass('hidden');
-    			// $('.text-area.more').toggle("slide", {}, 800);
     			
+    			$('.text-area.more').each(function( index, element ){
+					var dir = $(element).attr('data-drop-direction');
+					$(element).toggle('drop', {direction: dir}, 800);
+    			});    			
     		}
 		});
 	</script>
