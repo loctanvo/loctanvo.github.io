@@ -15,9 +15,18 @@ h1.small{
 		color: #636363;
 }
 
+ul, li {
+	list-style: none;
+  padding: 0;
+}
 
 nav {
   margin-top: 20px;
+  text-align: center;
+  font-family: 'Helvetica Neue', 'Raleway';
+  font-weight: 100;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 nav a {
@@ -29,15 +38,34 @@ nav a {
   font-weight: 300;
 }
 
+.menu-nav li{
+    padding-top: 45px;
+}
+
+.menu-nav a:hover{
+	color: #FFF;
+	background-color: #636363;
+	border: 1px solid #636363;
+  text-decoration: none;
+}
+
+li.logo {
+  padding-top: 0;
+}
+
 .logo a {
   font-family: bebas-regular;
   font-size: 24px;
   font-weight: bold;
   color: #F5F5F5;
+  text-decoration: none;
 }
 
-.logo .line {
-  display: block;
+.logo a:hover{
+	background-color: #636363;
+	border: 2px solid #636363;
+  text-decoration: none;
+  color: #636363;
 }
 
 .logo .line span {
@@ -58,7 +86,7 @@ nav a {
   background-color: #d6d6d6;
   display: block;
   margin-top: -7px;
-  margin-left: -12px;
+  margin-left: -27px;
 }
 
 .logo-inner-text {
