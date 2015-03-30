@@ -1,0 +1,41 @@
+---
+title: Blog
+permalink: /blog/
+---
+
+<!DOCTYPE html>
+<html>
+
+  {% include head.blog.overview.html %}
+
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <ul class="nav nav-justified text-uppercase">
+            <li><a href="#">Home</a></li>
+            <li class="logo">
+              <a href="#" class="center-block">
+                <span class="line">Loc</span>
+                <span class="line">Tan</span>
+                <span class="line">Vo*</span>
+              </a>
+            </li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h1>Just some thoughts</h1>
+      <div>
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            {{ post.excerpt | truncatewords:30 }}
+          </li>
+        {% endfor %}
+      </ul>
+      </div>
+    </div>
+  </body>
+</html>

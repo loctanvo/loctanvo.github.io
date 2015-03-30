@@ -3,5 +3,20 @@
 ---
 
 body {
-  color: #FF0000 !important;
+  background: #F5F5F5;
+}
+
+.logo {
+  font-family: bebas-regular;
+  font-size: 22px;
+}
+
+.logo a {
+  width: 150px;
+  height: 150px;
+}
+
+.logo .line {
+  display: block;
+  letter-spacing: 10px;
 }
