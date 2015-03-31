@@ -37,6 +37,26 @@ nav a {
   border: 1px solid #AAA;
   font-weight: 300;
 }
+nav.collapsed-navbar {
+  background-color: transparent;
+  border:none;
+  margin: 0;
+}
+
+nav.collapsed-navbar a {
+  border:none;
+}
+
+nav.collapsed-navbar img {
+  height: 30px;
+  width: 30px;
+  background-color: #FFF;
+}
+
+nav.collapsed-navbar #navbar-collapse{
+  background-color: #FFF;
+  overflow: hidden;
+}
 
 .menu-nav li{
     padding-top: 45px;
