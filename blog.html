@@ -39,14 +39,16 @@ permalink: /blog/
       <div class="posts">
           {% for post in site.posts %}
             <div class="row">
-              <div class="col-sm-6">
-                <p class="center-block"><a href="{{ post.url }}">{{ post.title }}</a></p>
-              </div>
-              <div class="col-sm-6">
-                <p class="center-block">
-                  {{ post.excerpt | truncatewords:30 | remove:'<p>' | remove: '</p>' }}
-                </p>
-                <!-- {{ post.excerpt | remove: '<p>' | remove: '</p>' }} -->
+              <div class="row-same-height">
+                <div class="title col-sm-6 col-same-height col-align-middle">
+                  <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+                </div>
+                <div class="excerpt col-sm-6 col-same-height col-align-middle">
+                  <p>
+                    {{ post.excerpt | truncatewords:30 | remove:'<p>' | remove: '</p>' }}
+                  </p>
+                  <!-- {{ post.excerpt | remove: '<p>' | remove: '</p>' }} -->
+                </div>
               </div>
             </div>
           {% endfor %}

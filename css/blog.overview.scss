@@ -96,4 +96,27 @@ li.logo {
 
 .posts p {
   max-width: 200px;
+  margin: 20px auto;
+}
+
+.posts .title{
+  background-color: #A1BAB7;
+}
+
+.posts .excerpt {
+  background-color: #FFFFFF;
+}
+
+.row-same-height {
+  display: table;
+  width: 100%;
+}
+
+.col-same-height {
+  display: table-cell;
+  float: none !important;
+}
+
+.col-align-middle {
+  vertical-align: middle;
 }
