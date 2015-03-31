@@ -42,7 +42,7 @@ permalink: /blog/
               <div class="row-same-height">
                 {% assign value = forloop.index | modulo:2 %}
                 {% if value == 1 %}
-                  <div class="title col-sm-6 col-same-height col-align-middle">
+                  <div class="title mint col-sm-6 col-same-height col-align-middle">
                     <p class="text-center">
                       <a href="{{ post.url }}">
                         <span>{{ post.title }}</span>
@@ -67,23 +67,22 @@ permalink: /blog/
                   </div>
                   <div class="excerpt col-sm-6 col-same-height col-align-middle">
                       {{ post.excerpt | truncatewords:30 | remove:"..." | append: " [...]" }}
-
-                      <p class="text-right read-more-label">
-                        <a href="#">Read more</a>
+                      <p class="text-right read-more-label read-more-orange">
+                        <a href="{{ post.url }}">Read more</a>
                       </p>
                   </div>
                 {% else %}
                   <div class="excerpt col-sm-6 col-same-height col-align-middle">
                       {{ post.excerpt | truncatewords:30 | remove:"..." | append: " [...]" }}
 
-                      <p class="text-left read-more-label">
-                        <a href="#">Read more</a>
+                      <p class="text-left read-more-label read-more-mint">
+                        <a href="{{ post.url }}">Read more</a>
                       </p>
                   </div>
                   <div class="col-same-height col-align-middle">
                     <div class="arrow arrow-right"></div>
                   </div>
-                  <div class="title col-sm-6 col-same-height col-align-middle">
+                  <div class="title orange col-sm-6 col-same-height col-align-middle">
                     <p class="text-center">
                       <a href="{{ post.url }}">
                         <span>{{ post.title }}</span>
@@ -109,6 +108,7 @@ permalink: /blog/
           {% endfor %}
         </ul>
       </div>
+      {% include footer.html %}
     </div>
   </body>
 </html>

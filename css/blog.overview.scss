@@ -100,11 +100,19 @@ li.logo {
 }
 
 .posts .title{
-  background-color: #A1BAB7;
+
   font-family: bebas-regular;
   font-size: 42px;
   font-weight: bold;
   color: #636363;
+}
+
+.mint {
+  background-color: #A1BAB7;
+}
+
+.orange{
+  background-color: #FD9C95;
 }
 
 .posts .title a {
@@ -146,6 +154,13 @@ li.logo {
 
 .read-more-label a {
   text-decoration: none;
+}
+
+.read-more-mint a{
+  color: #A1BAB7;
+}
+
+.read-more-orange a{
   color: #FD9C95;
 }
 
