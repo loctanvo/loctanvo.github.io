@@ -40,36 +40,70 @@ permalink: /blog/
           {% for post in site.posts %}
             <div class="row">
               <div class="row-same-height">
-                <div class="title col-sm-6 col-same-height col-align-middle">
-                  <p class="text-center">
-                    <a href="{{ post.url }}">
-                      <span>{{ post.title }}</span>
-                    </a>
-                    <hr class="title-separator">
-                    <span class="text-center center-block title-label">
-                      {{ post.author }}
-                      <br>
-                      {{ post.date | date_to_long_string }}
-                      <br>
-                      {% assign words = post.content | number_of_words %}
-                      {% if words < 360 %}
-                      1 min
-                      {% else %}
-                      {{ words | divided_by:180 }} mins
-                      {% endif %}
-                    </span>
-                  </p>
-                </div>
-                <div class="col-same-height col-align-middle">
-                  <div class="arrow arrow-left"></div>
-                </div>
-                <div class="excerpt col-sm-6 col-same-height col-align-middle">
-                    {{ post.excerpt | truncatewords:30 | remove:"..." | append: " [...]" }}
-
-                    <p class="text-right read-more-label">
-                      <a href="#">Read more</a>
+                {% assign value = forloop.index | modulo:2 %}
+                {% if value == 1 %}
+                  <div class="title col-sm-6 col-same-height col-align-middle">
+                    <p class="text-center">
+                      <a href="{{ post.url }}">
+                        <span>{{ post.title }}</span>
+                      </a>
+                      <hr class="title-separator">
+                      <span class="text-center center-block title-label">
+                        {{ post.author }}
+                        <br>
+                        {{ post.date | date_to_long_string }}
+                        <br>
+                        {% assign words = post.content | number_of_words %}
+                        {% if words < 360 %}
+                        1 min
+                        {% else %}
+                        {{ words | divided_by:180 }} mins
+                        {% endif %}
+                      </span>
                     </p>
-                </div>
+                  </div>
+                  <div class="col-same-height col-align-middle">
+                    <div class="arrow arrow-left"></div>
+                  </div>
+                  <div class="excerpt col-sm-6 col-same-height col-align-middle">
+                      {{ post.excerpt | truncatewords:30 | remove:"..." | append: " [...]" }}
+
+                      <p class="text-right read-more-label">
+                        <a href="#">Read more</a>
+                      </p>
+                  </div>
+                {% else %}
+                  <div class="excerpt col-sm-6 col-same-height col-align-middle">
+                      {{ post.excerpt | truncatewords:30 | remove:"..." | append: " [...]" }}
+
+                      <p class="text-left read-more-label">
+                        <a href="#">Read more</a>
+                      </p>
+                  </div>
+                  <div class="col-same-height col-align-middle">
+                    <div class="arrow arrow-right"></div>
+                  </div>
+                  <div class="title col-sm-6 col-same-height col-align-middle">
+                    <p class="text-center">
+                      <a href="{{ post.url }}">
+                        <span>{{ post.title }}</span>
+                      </a>
+                      <hr class="title-separator">
+                      <span class="text-center center-block title-label">
+                        {{ post.author }}
+                        <br>
+                        {{ post.date | date_to_long_string }}
+                        <br>
+                        {% assign words = post.content | number_of_words %}
+                        {% if words < 360 %}
+                        1 min
+                        {% else %}
+                        {{ words | divided_by:180 }} mins
+                        {% endif %}
+                      </span>
+                    </p>
+                  </div>
+                {% endif %}
               </div>
             </div>
           {% endfor %}
