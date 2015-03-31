@@ -44,12 +44,15 @@ permalink: /blog/
                   <p class="text-center">
                     <a href="{{ post.url }}">
                       <span>{{ post.title }}</span>
-                      <span class="center-block title-label">
-                        {{ post.author }}
-                        <br>
-                        {{ post.date | date_to_long_string }}
-                      </span>
                     </a>
+                    <hr class="title-separator">
+                    <span class="text-center center-block title-label">
+                      {{ post.author }}
+                      <br>
+                      {{ post.date | date_to_long_string }}
+                      <br>
+                      {{ post.content | number_of_words }} words
+                    </span>
                   </p>
                 </div>
                 <div class="excerpt col-sm-6 col-same-height col-align-middle">
