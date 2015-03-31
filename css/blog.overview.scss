@@ -100,11 +100,21 @@ li.logo {
 }
 
 .posts .title{
-
   font-family: bebas-regular;
   font-size: 42px;
   font-weight: bold;
   color: #636363;
+}
+
+.posts .title a {
+  text-decoration: none;
+  color: #636363;
+}
+
+.posts .title a:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+  color: #000;
 }
 
 .mint {
@@ -113,11 +123,6 @@ li.logo {
 
 .orange{
   background-color: #FD9C95;
-}
-
-.posts .title a {
-  text-decoration: none;
-  color: #636363;
 }
 
 .title .title-label {
