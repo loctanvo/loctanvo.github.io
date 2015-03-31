@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "LIKSOM ipsum!"
+title:  "LIKSOM ipsum! And a really long title. How does that work? How about even even even longer?"
 date:   2015-03-31 21:54:30
 tags: test
 author: "Loc Tan Vo"
