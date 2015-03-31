@@ -13,8 +13,8 @@ permalink: /blog/
       <header>
         <nav class="row">
           <ul class="menu-nav">
-            <li class="col-md-4"><a href="#">About</a></li>
-            <li class="logo col-md-4">
+            <li class="col-sm-4"><a href="#">About</a></li>
+            <li class="logo col-sm-4">
               <a href="#" class="center-block logo-outer img-circle">
                 <span class="logo-inner img-circle">
                   <span class="logo-inner-text">
@@ -31,7 +31,7 @@ permalink: /blog/
                 </span>
               </a>
             </li>
-            <li class="col-md-4"><a href="#">Contact</a></li>
+            <li class="col-sm-4"><a href="#">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -43,7 +43,10 @@ permalink: /blog/
                 <p class="center-block"><a href="{{ post.url }}">{{ post.title }}</a></p>
               </div>
               <div class="col-sm-6">
-                {{ post.excerpt | truncatewords:30 }}
+                <p class="center-block">
+                  {{ post.excerpt | truncatewords:30 | remove:'<p>' | remove: '</p>' }}
+                </p>
+                <!-- {{ post.excerpt | remove: '<p>' | remove: '</p>' }} -->
               </div>
             </div>
           {% endfor %}
