@@ -51,7 +51,12 @@ permalink: /blog/
                       <br>
                       {{ post.date | date_to_long_string }}
                       <br>
-                      {{ post.content | number_of_words }} words
+                      {% assign words = post.content | number_of_words %}
+                      {% if words < 360 %}
+                      1 min
+                      {% else %}
+                      {{ words | divided_by:180 }} mins
+                      {% endif %}
                     </span>
                   </p>
                 </div>
