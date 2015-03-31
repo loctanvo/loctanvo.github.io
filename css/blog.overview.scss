@@ -95,16 +95,29 @@ li.logo {
 }
 
 .posts p {
-  max-width: 200px;
-  margin: 20px auto;
+  max-width: 300px;
+  margin: 100px auto;
 }
 
 .posts .title{
   background-color: #A1BAB7;
+  font-family: bebas-regular;
+  font-size: 36px;
+  font-weight: bold;
+  color: #636363;
+}
+
+.posts .title a {
+  text-decoration: none;
+  color: #636363;
 }
 
 .posts .excerpt {
   background-color: #FFFFFF;
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 100;
 }
 
 .row-same-height {
