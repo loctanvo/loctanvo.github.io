@@ -41,13 +41,19 @@ permalink: /blog/
             <div class="row">
               <div class="row-same-height">
                 <div class="title col-sm-6 col-same-height col-align-middle">
-                  <p class="text-center"><a href="{{ post.url }}">{{ post.title }}</a></p>
+                  <p class="text-center">
+                    <a href="{{ post.url }}">
+                      <span>{{ post.title }}</span>
+                      <span class="center-block title-label">{{ post.date | date_to_long_string }}</span>
+                    </a>
+                  </p>
                 </div>
                 <div class="excerpt col-sm-6 col-same-height col-align-middle">
-                  <p>
-                    {{ post.excerpt | truncatewords:30 | remove:'<p>' | remove: '</p>' }}
-                  </p>
-                  <!-- {{ post.excerpt | remove: '<p>' | remove: '</p>' }} -->
+                    {{ post.excerpt | truncatewords:30 | remove:"..." | append: " [...]" }}
+
+                    <p class="text-right read-more-label">
+                      <a href="#">Read more</a>
+                    </p>
                 </div>
               </div>
             </div>
