@@ -44,7 +44,11 @@ permalink: /blog/
                   <p class="text-center">
                     <a href="{{ post.url }}">
                       <span>{{ post.title }}</span>
-                      <span class="center-block title-label">{{ post.date | date_to_long_string }}</span>
+                      <span class="center-block title-label">
+                        {{ post.author }}
+                        <br>
+                        {{ post.date | date_to_long_string }}
+                      </span>
                     </a>
                   </p>
                 </div>
