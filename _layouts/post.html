@@ -11,8 +11,7 @@
           <img class="img-circle" src="/content/images/Loc_square_brighter.png" alt="Image of me (Loc Tan Vo)">
           <div class="post-meta-info">
             {% if page.author %}<div>{{ page.author }}</div>{% endif %}
-            {% if page.date %}<div>{{ page.date | date: "%b %-d, %Y" }}</div>{% endif %}
-
+            {% if page.date %}<div>{{ page.date | date: "%-d %b %Y" }}</div>{% endif %}
             <div>
               {% assign words = page.content | number_of_words %}
               {% if words < 360 %}
