@@ -19,6 +19,14 @@ h1 {
   text-transform: uppercase;
 }
 
+a{
+  color: $salmon;
+}
+
+a:hover {
+  color: $salmon;
+}
+
 .text-area {
   background: $white;
   margin: 50px auto;
@@ -26,15 +34,46 @@ h1 {
   width: $article-width;
 }
 
-.not-so-wide {
+.paragraph-width {
   max-width: $paragraph-width;
 }
 
 .tags {
-  margin: auto;
+  font-family: $bebas-stack;
+  font-size: 18px;
 }
 
 .tag {
   padding: 0 5px;
-  font-family: $bebas-stack;
+  color: $mint;
+}
+
+.article-separator {
+  width: 100px;
+  border-top: 2px solid #d6d6d6;
+  margin: 50px auto;
+}
+
+article p {
+  max-width: $paragraph-width;
+  margin: 30px auto;
+  text-align: justify;
+  font-family: $font-long-text;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.8em;
+}
+
+article p:first-word{
+  font-weight: bold;
+}
+
+.thanks {
+  font-family: $font-long-text;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+pre {
+  font-size: 14px;
 }

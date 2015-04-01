@@ -1,11 +1,6 @@
 /**
- * Default font-stack
+ * Default imports
  */
 
 @import 'colors';
 @import 'fonts';
-
-body {
-  background: $smoke-white;
-  color: $default-text-color;
-}
