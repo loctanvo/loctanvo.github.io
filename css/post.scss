@@ -30,7 +30,7 @@ a:hover {
 .text-area {
   background: $white;
   margin: 50px auto;
-  padding: 30px 10px;
+  padding: 30px 0px;
   width: $article-width;
 }
 
@@ -74,6 +74,14 @@ article p:first-word{
   font-weight: normal;
 }
 
-pre {
+pre, code {
   font-size: 14px;
+  border: none;
+  border-radius: 2px !important;
+  background: #202020;
+}
+
+code {
+  color: $mint;
+  padding: 6px;
 }
