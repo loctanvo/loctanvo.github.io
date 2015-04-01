@@ -2,6 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+@import 'base';
+
 body {
   background: #F5F5F5;
 }
@@ -14,11 +16,6 @@ h1.blog-title{
 		margin: 50px inherit;
 		color: #636363;
     text-transform: capitalize;
-}
-
-ul, li {
-	list-style: none;
-  padding: 0;
 }
 
 nav {

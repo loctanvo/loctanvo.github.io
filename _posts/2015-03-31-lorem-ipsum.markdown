@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lorem ipsum!"
+title:  "Documentation Done Right"
 date:   2015-03-31 20:54:30
 tags: test
 author: "Loc Tan Vo"
