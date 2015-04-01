@@ -2,7 +2,7 @@
 layout: post
 title:  "Documentation Done Right"
 date:   2015-03-31 20:54:30
-tags: test
+tags: test liksom bla nonsense
 author: "Loc Tan Vo"
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce augue eros, egestas eget libero id, malesuada auctor velit. Phasellus ex nisl, commodo nec rutrum et, accumsan id eros. Aenean dui ligula, rutrum sed iaculis vitae, rutrum eget metus. Suspendisse interdum eros urna, eu pretium magna commodo quis. Nunc a accumsan metus, facilisis posuere mauris. Sed arcu mauris, ornare nec ante in, convallis commodo erat. Nam pellentesque euismod turpis sit amet feugiat. Ut vitae justo luctus, accumsan nunc feugiat, porttitor dui. Curabitur tincidunt nisl ut volutpat dictum. Suspendisse ac cursus nunc, eu fringilla dolor. Nullam et nisi orci. Fusce malesuada est sem, et faucibus ligula efficitur vitae. Mauris eget semper elit. Donec sit amet libero ex. Integer aliquet mi a malesuada sodales. Donec ut auctor massa.

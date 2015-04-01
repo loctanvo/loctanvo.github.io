@@ -12,6 +12,13 @@ body {
   color: $default-text-color;
 }
 
+h1 {
+  font-family: $bebas-stack;
+  font-size: 6em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .text-area {
   background: $white;
   margin: 50px auto;
@@ -19,11 +26,15 @@ body {
   width: $article-width;
 }
 
-h1 {
-  font-family: $bebas-stack;
-  font-size: 6em;
-  font-weight: bold;
+.not-so-wide {
   max-width: $paragraph-width;
+}
+
+.tags {
   margin: auto;
-  text-transform: uppercase;
+}
+
+.tag {
+  padding: 0 5px;
+  font-family: $bebas-stack;
 }
