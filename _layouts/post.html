@@ -6,6 +6,23 @@
   <body>
     <div class="container">
       <section class="text-area">
+        <div class="post-meta text-center">
+          <div class="arrow-left"></div>
+          <img class="img-circle" src="/content/images/Loc_square_brighter.png" alt="Image of me (Loc Tan Vo)">
+          <div class="post-meta-info">
+            {% if page.author %}<div>{{ page.author }}</div>{% endif %}
+            {% if page.date %}<div>{{ page.date | date: "%b %-d, %Y" }}</div>{% endif %}
+
+            <div>
+              {% assign words = page.content | number_of_words %}
+              {% if words < 360 %}
+              1 min
+              {% else %}
+              {{ words | divided_by:180 }} mins
+              {% endif %}
+            </div>
+          </div>
+        </div>
         <header class="paragraph-width center-block">
           <h1 class="text-center">{{ page.title }}</h1>
           <div class="tags text-center">

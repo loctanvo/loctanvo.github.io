@@ -87,3 +87,32 @@ code .token.number{
   color: $mint;
   padding-right: 10px;
 }
+
+.post-meta {
+  font-family: "Courier New";
+  position: fixed;
+  margin-left: -150px;
+  margin-top: 75px;
+}
+
+.post-meta img {
+  height: 100px;
+  width: 100px;
+  background: $white;
+}
+
+.post-meta .post-meta-info{
+  margin-top: 10px;
+}
+
+.arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right:15px solid #FFF;
+
+  margin-left: 135px;
+  margin-top: 35px;
+  position: absolute;
+}
