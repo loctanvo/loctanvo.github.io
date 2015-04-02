@@ -31,6 +31,16 @@
               {% endfor %}
             {% endif %}
           </div>
+          <div class="post-meta-info meta-visible-xs text-center">
+            {% if page.author %}{{ page.author }} • {% endif %}
+            {% if page.date %}{{ page.date | date: "%-d %b %Y" }} • {% endif %}
+            {% assign words = page.content | number_of_words %}
+            {% if words < 360 %}
+            1 min
+            {% else %}
+            {{ words | divided_by:180 }} mins
+            {% endif %}
+          </div>
         </header>
         <hr class="article-separator">
         <article>

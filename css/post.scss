@@ -130,9 +130,23 @@ code .token.number{
   position: absolute;
 }
 
+.post-meta-info.meta-visible-xs{
+  font-family: "Courier New";
+  display: none !important;
+  margin-top: 10px;
+}
+
+.post-meta-info span{
+  padding-left:  5px;
+}
+
 @media (max-width: 810px){
   .post-meta{
     display: none;
+  }
+
+  .post-meta-info.meta-visible-xs{
+    display: block !important;
   }
 }
 
