@@ -6,6 +6,7 @@
 
 $article-width: 75%;
 $paragraph-width: 500px;
+$small-device-width: 768px;
 
 body {
   background: $smoke-white;
@@ -38,6 +39,12 @@ a:hover {
   margin: 30px auto;
   padding: 30px 0px;
   width: $article-width;
+}
+
+@media (max-width: 768px){
+  .text-area {
+    width: 100%;
+  }
 }
 
 .paragraph-width {
@@ -121,4 +128,26 @@ code .token.number{
   margin-left: 135px;
   margin-top: 35px;
   position: absolute;
+}
+
+@media (width: $small-device-width){
+  .post-meta{
+    display: none;
+  }
+
+  .arrow-left {
+    
+  }
+}
+
+@media (min-width: $small-device-width) and (max-width: 860px){
+  .post-meta {
+    margin-left: -105px;
+  }
+}
+
+@media (min-width: 860px) and (max-width: 1020px){
+  .post-meta {
+      margin-left: -135px;
+  }
 }
