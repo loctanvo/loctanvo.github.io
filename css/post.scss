@@ -14,9 +14,15 @@ body {
 
 h1 {
   font-family: $bebas-stack;
-  font-size: 6em;
+  font-size: 4em;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  h1{
+    font-size: 6em;
+  }
 }
 
 a{
