@@ -48,27 +48,25 @@
         </article>
         <hr class="article-separator">
         <div class="text-center thanks">Thanks for reading!</div>
+        <div>
+          <div id="post-nav" class="clearfix">
+          {% if page.previous.url %}
+          <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+          {% endif %}
+          {% if page.next.url %}
+          <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+          {% endif %}
+          </div>
+        </div>
       </section>
       {% include footer.html %}
     </div>
-
-      <!-- <div class="container-liquid site-wrapper">
-        <div class="post">
-
-          <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-            <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-          </header>
-        </div>
-      </div> -->
   </body>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  <!-- This following line is needed in case of using the default easing option or when using another
-   one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
-   <script src="/content/lib/prism/prism.js"></script>
+  <script src="/content/lib/prism/prism.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
