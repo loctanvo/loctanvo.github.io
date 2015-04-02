@@ -130,24 +130,28 @@ code .token.number{
   position: absolute;
 }
 
-@media (width: $small-device-width){
+@media (max-width: 810px){
   .post-meta{
     display: none;
   }
-
-  .arrow-left {
-    
-  }
 }
 
-@media (min-width: $small-device-width) and (max-width: 860px){
+@media (min-width: 810px) and (max-width: 860px){
   .post-meta {
-    margin-left: -105px;
+    margin-left: -130px;
+  }
+
+  .arrow-left {
+      margin-left: 115px;
   }
 }
 
 @media (min-width: 860px) and (max-width: 1020px){
   .post-meta {
       margin-left: -135px;
+  }
+
+  .arrow-left {
+      margin-left: 120px;
   }
 }
