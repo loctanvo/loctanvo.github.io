@@ -48,29 +48,29 @@
         </article>
         <hr class="article-separator">
         <div class="text-center thanks">Thanks for reading!</div>
-        <hr class="post-nav-separator">
-        <div class="post-nav row text-center">
-          <div class="col-xs-4">
-            {% if page.previous.url %}
-            <a href="{{page.previous.url}}">
-              <span class="nav-title">Previous</span>
-              <span class="nav-link">{{page.previous.title | truncatewords:5}}</span>
-            </a>
-            {% endif %}
-          </div>
-          <div class="col-xs-4">
-            <a class="nav-title" href="/blog">Back to overview</a>
-          </div>
-          <div class="col-xs-4">
-            {% if page.next.url %}
-            <a href="{{page.next.url}}">
-              <span class="nav-title">Next</span>
-              <span class="nav-link">{{page.next.title | truncatewords:5}}</span>
-            </a>
-            {% endif %}
-          </div>
-        </div>
       </section>
+      <div class="post-nav row text-center">
+        <div class="col-xs-3">
+          {% if page.previous.url %}
+          <a href="{{page.previous.url}}" rel="prev" title="{{page.previous.title}}">
+            <span class="nav-title">Previous</span>
+            <span class="nav-link">{{page.previous.title | truncatewords:5}}</span>
+          </a>
+          {% endif %}
+        </div>
+        <div class="col-xs-6">
+          <a class="nav-title" href="/blog">Back to overview</a>
+        </div>
+        <div class="col-xs-3">
+          {% if page.next.url %}
+          <a href="{{page.next.url}}" rel="next" title="{{page.next.title}}">
+            <span class="nav-title">Next</span>
+            <span class="nav-link">{{page.next.title | truncatewords:5}}</span>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+      <hr class="post-nav-separator">
       {% include footer.html %}
     </div>
   </body>
