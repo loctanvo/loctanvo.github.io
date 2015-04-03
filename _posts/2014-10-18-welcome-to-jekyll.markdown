@@ -45,26 +45,13 @@ namespace Fluent.Time.Test
                 Assert.That(twoOClock.Date, Is.EqualTo(Day.Today.Date));
             });
         }
-
-        [Test]
-        public void OClock_DateSpecified_ReturnsTimeOfThatDate()
-        {
-            TimeMachine.SandBox(time =>
-            {
-                time.FreezeTo(Some.Time);
-
-                var twoOClock = 2.OClock(Day.Yesterday);
-
-                Assert.That(twoOClock.TimeOfDay.Hours, Is.EqualTo(2));
-                Assert.That(twoOClock.TimeOfDay.Minutes, Is.EqualTo(0));
-                Assert.That(twoOClock.TimeOfDay.Seconds, Is.EqualTo(0));
-                Assert.That(twoOClock.TimeOfDay.Milliseconds, Is.EqualTo(0));
-                Assert.That(twoOClock.Date, Is.EqualTo(Day.Yesterday.Date));
-            });
-        }
     }
 }
 {% endhighlight %}
+
+Ut metus velit, efficitur hendrerit dolor eget, dictum posuere metus. Curabitur ut erat nec arcu scelerisque luctus vitae at erat. Nulla vitae eros at massa porta tincidunt ac at enim. Aenean cursus tortor id sem ullamcorper, non tempor mauris hendrerit. Integer in velit eu leo mattis pretium nec at ex. Vivamus eu velit sit amet nulla pharetra scelerisque. Fusce feugiat sit amet lorem vel facilisis. In iaculis fringilla nisl dictum ultrices. Vestibulum tempor ligula a sem volutpat viverra. Curabitur a congue ipsum. Cras fringilla vel tortor eu consequat. Ut consequat molestie mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+Ut metus velit, efficitur hendrerit dolor eget, dictum posuere metus. Curabitur ut erat nec arcu scelerisque luctus vitae at erat. Nulla vitae eros at massa porta tincidunt ac at enim. Aenean cursus tortor id sem ullamcorper, non tempor mauris hendrerit. Integer in velit eu leo mattis pretium nec at ex. Vivamus eu velit sit amet nulla pharetra scelerisque. Fusce feugiat sit amet lorem vel facilisis. In iaculis fringilla nisl dictum ultrices. Vestibulum tempor ligula a sem volutpat viverra. Curabitur a congue ipsum. Cras fringilla vel tortor eu consequat. Ut consequat molestie mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
 Ut metus velit, efficitur hendrerit dolor eget, dictum posuere metus. Curabitur ut erat nec arcu scelerisque luctus vitae at erat. Nulla vitae eros at massa porta tincidunt ac at enim. Aenean cursus tortor id sem ullamcorper, non tempor mauris hendrerit. Integer in velit eu leo mattis pretium nec at ex. Vivamus eu velit sit amet nulla pharetra scelerisque. Fusce feugiat sit amet lorem vel facilisis. In iaculis fringilla nisl dictum ultrices. Vestibulum tempor ligula a sem volutpat viverra. Curabitur a congue ipsum. Cras fringilla vel tortor eu consequat. Ut consequat molestie mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
@@ -84,7 +71,11 @@ end
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 
+Ut metus velit, efficitur hendrerit dolor eget, dictum posuere metus. Curabitur ut erat nec arcu scelerisque luctus vitae at erat. Nulla vitae eros at massa porta tincidunt ac at enim. Aenean cursus tortor id sem ullamcorper, non tempor mauris hendrerit. Integer in velit eu leo mattis pretium nec at ex. Vivamus eu velit sit amet nulla pharetra scelerisque. Fusce feugiat sit amet lorem vel facilisis. In iaculis fringilla nisl dictum ultrices. Vestibulum tempor ligula a sem volutpat viverra. Curabitur a congue ipsum. Cras fringilla vel tortor eu consequat. Ut consequat molestie mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
 ### Lastly, a `h3` tag
+
+Ut metus velit, efficitur hendrerit dolor eget, dictum posuere metus. Curabitur ut erat nec arcu scelerisque luctus vitae at erat. Nulla vitae eros at massa porta tincidunt ac at enim. Aenean cursus tortor id sem ullamcorper, non tempor mauris hendrerit. Integer in velit eu leo mattis pretium nec at ex. Vivamus eu velit sit amet nulla pharetra scelerisque. Fusce feugiat sit amet lorem vel facilisis. In iaculis fringilla nisl dictum ultrices. Vestibulum tempor ligula a sem volutpat viverra. Curabitur a congue ipsum. Cras fringilla vel tortor eu consequat. Ut consequat molestie mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
 Ut metus velit, efficitur hendrerit dolor eget, dictum posuere metus. Curabitur ut erat nec arcu scelerisque luctus vitae at erat. Nulla vitae eros at massa porta tincidunt ac at enim. Aenean cursus tortor id sem ullamcorper, non tempor mauris hendrerit. Integer in velit eu leo mattis pretium nec at ex. Vivamus eu velit sit amet nulla pharetra scelerisque. Fusce feugiat sit amet lorem vel facilisis. In iaculis fringilla nisl dictum ultrices. Vestibulum tempor ligula a sem volutpat viverra. Curabitur a congue ipsum. Cras fringilla vel tortor eu consequat. Ut consequat molestie mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
