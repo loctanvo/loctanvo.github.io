@@ -169,3 +169,35 @@ code .token.number{
       margin-left: 120px;
   }
 }
+
+.post-nav{
+  font-family: $sans-serif-stack;
+  margin-top: 100px;
+}
+
+.post-nav a{
+  color: $default-text-color;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.post-nav a:hover{
+  color: $salmon;
+  background-color: $default-text-color;
+}
+
+.post-nav .nav-title{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 100;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.post-nav .nav-link{
+  font-weight: bold;
+  font-family: bebas-regular;
+  letter-spacing: 1px;
+}
