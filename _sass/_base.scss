@@ -4,3 +4,20 @@
 
 @import 'colors';
 @import 'fonts';
+
+pre, code {
+  font-size: 14px;
+  border: none;
+  border-radius: 2px !important;
+  background: #202020;
+}
+
+code {
+  color: $mint;
+  padding: 6px;
+}
+
+code .token.number{
+  color: $mint;
+  padding-right: 10px;
+}
