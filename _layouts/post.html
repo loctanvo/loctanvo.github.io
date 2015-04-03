@@ -48,6 +48,7 @@
         </article>
         <hr class="article-separator">
         <div class="text-center thanks">Thanks for reading!</div>
+        <hr class="post-nav-separator">
         <div class="post-nav row text-center">
           <div class="col-xs-4">
             {% if page.previous.url %}
@@ -87,13 +88,10 @@
   <![endif]-->
   <script>
   $(document).ready(function() {
-      $("article p").each(function(){
+      $("article > p").each(function(){
         var node = $(this);
         var content = node.html();
-        console.log(content);
-
         var newHtml = content.replace(/^(\S+\s\S+\s\S+)/, "<strong>$1</strong>");
-        console.log(newHtml);
         node.html(newHtml);
       });
   });

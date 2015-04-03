@@ -7,6 +7,12 @@ author: "Loc Tan Vo"
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 
+> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+>
+> \- By **Major Nes**, [Recursively rolling tables](http://google.com)
+
 Ut metus velit, efficitur hendrerit dolor eget, dictum posuere metus. Curabitur ut erat nec arcu scelerisque luctus vitae at erat. Nulla vitae eros at massa porta tincidunt ac at enim. Aenean cursus tortor id sem ullamcorper, non tempor mauris hendrerit. Integer in velit eu leo mattis pretium nec at ex. Vivamus eu velit sit amet nulla pharetra scelerisque. Fusce feugiat sit amet lorem vel facilisis. In iaculis fringilla nisl dictum ultrices. Vestibulum tempor ligula a sem volutpat viverra. Curabitur a congue ipsum. Cras fringilla vel tortor eu consequat. Ut consequat molestie mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
 ## A subtitle that can be really long, so long that it could cause trouble for the page

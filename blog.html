@@ -146,13 +146,10 @@ permalink: /blog/
     <![endif]-->
     <script>
     $(document).ready(function() {
-        $(".excerpt p").each(function(){
+        $(".excerpt > p").each(function(){
           var node = $(this);
           var content = node.html();
-          console.log(content);
-
           var newHtml = content.replace(/^(\S+\s\S+\s\S+)/, "<strong>$1</strong>");
-          console.log(newHtml);
           node.html(newHtml);
         });
     });

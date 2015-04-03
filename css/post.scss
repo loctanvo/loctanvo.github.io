@@ -33,6 +33,19 @@ h2, h3, h4{
   text-transform: capitalize;
 }
 
+blockquote {
+  background-color: #EEE;
+  border-color: $mint;
+  color: #000;
+}
+
+blockquote p {
+  font-style: italic;
+  margin: 10px auto !important;
+  font-family: "Lobster Two" !important;
+  font-size: 18px !important;
+}
+
 @media (min-width: 768px) {
   h1{
     font-size: 6em;
@@ -166,9 +179,13 @@ article p {
   }
 }
 
+.post-nav-separator {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .post-nav{
   font-family: $sans-serif-stack;
-  margin-top: 100px;
 }
 
 .post-nav a{
@@ -180,7 +197,8 @@ article p {
 
 .post-nav a:hover{
   color: $salmon;
-  background-color: $default-text-color;
+  background-color: #EEE;
+  text-decoration: none;
 }
 
 .post-nav .nav-title{
