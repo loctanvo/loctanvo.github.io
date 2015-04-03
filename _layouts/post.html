@@ -9,10 +9,14 @@
         <div class="post-meta text-center hidden-xs">
           <div class="arrow-left"></div>
           <img class="img-circle" src="/content/images/Loc_square_brighter.png" alt="Image of me (Loc Tan Vo)">
-          <div class="post-meta-info">
+          <div class="post-meta-info text-left">
             {% if page.author %}<div>{{ page.author }}</div>{% endif %}
             {% if page.date %}<div>{{ page.date | date: "%-d %b %Y" }}</div>{% endif %}
             <div>
+              <br>
+              <div>
+                <strong>Reading time:</strong>
+              </div>
               {% assign words = page.content | number_of_words %}
               {% if words < 360 %}
               1 min

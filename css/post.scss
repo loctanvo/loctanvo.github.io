@@ -7,6 +7,7 @@
 $article-width: 75%;
 $paragraph-width: 500px;
 $small-device-width: 768px;
+$separator-color: #D6D6D6;
 
 body {
   background: $smoke-white;
@@ -89,7 +90,7 @@ a:hover {
 
 .article-separator {
   width: 100px;
-  border-top: 2px solid #d6d6d6;
+  border-top: 2px solid $separator-color;
   margin: 50px auto;
 }
 
@@ -182,6 +183,7 @@ article p {
 .post-nav-separator {
   margin-top: 30px;
   margin-bottom: 30px;
+  border-color: $separator-color;
 }
 
 .post-nav{
