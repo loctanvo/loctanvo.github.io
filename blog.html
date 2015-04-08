@@ -79,6 +79,12 @@ permalink: /blog/
                         {% else %}
                         {{ words | divided_by:180 }} mins
                         {% endif %}
+                        {% if post.tags %}
+                          <br>
+                          {% for tag in post.tags %}
+                            <span class="tag">#{{ tag }}</span>
+                          {% endfor %}
+                        {% endif %}
                       </span>
                     </p>
                   </div>
@@ -118,6 +124,13 @@ permalink: /blog/
                         1 min
                         {% else %}
                         {{ words | divided_by:180 }} mins
+                        {% endif %}
+                        
+                        {% if post.tags %}
+                          <br>
+                          {% for tag in post.tags %}
+                            <span class="tag">#{{ tag }}</span>
+                          {% endfor %}
                         {% endif %}
                       </span>
                     </p>
