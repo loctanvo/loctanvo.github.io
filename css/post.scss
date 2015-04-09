@@ -8,6 +8,7 @@ $article-width: 75%;
 $paragraph-width: 500px;
 $small-device-width: 768px;
 $separator-color: #D6D6D6;
+$comment-area-width: 500px;
 
 body {
   background: $smoke-white;
@@ -94,7 +95,7 @@ a:hover {
   margin: 50px auto;
 }
 
-article p {
+article p, .content-text {
   max-width: $paragraph-width;
   margin: 30px auto;
   text-align: justify;
@@ -197,7 +198,7 @@ article p {
   padding-bottom: 10px;
 }
 
-.post-nav a:hover{
+.post-nav a:hover, .comment-toggler:hover{
   color: $salmon;
   background-color: #EEE;
   text-decoration: none;
@@ -218,6 +219,16 @@ article p {
   letter-spacing: 1px;
 }
 
-.disqus-area{
-  display:none;
+// .panel {
+//     position: fixed;
+//     right: -$comment-area-width; /*left or right and the width of your navigation panel*/
+//     width: $comment-area-width; /*should match the above value*/
+// }
+
+.wrap {
+    position: relative;
+}
+
+.comment-toggler {
+  padding: 20px;
 }
