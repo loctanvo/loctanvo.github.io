@@ -192,6 +192,7 @@ article p, .content-text {
 
 .post-nav{
   font-family: $sans-serif-stack;
+  background-color: $smoke-white;
 }
 
 .post-nav a{
@@ -205,6 +206,8 @@ article p, .content-text {
   color: $salmon;
   background-color: #EEE;
   text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
 }
 
 .post-nav .nav-title{
