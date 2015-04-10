@@ -9,7 +9,14 @@ permalink: /blog/
   {% include head.blog.overview.html %}
 
   <body>
-    <div class="container">
+    <div id="menu" class="panel contact-pane">
+      <img class="img-circle" src="/content/images/Loc_square_brighter.png" alt="Image of me (Loc Tan Vo)">
+      <ul>
+        <li>Liksom</li>
+        <li>Lipsum</li>
+      </ul>
+    </div>
+    <div class="container push wrap">
       <header>
         <nav class="collapsed-navbar navbar navbar-default navbar-fixed-top visible-xs">
           <div class="container-fluid">
@@ -50,7 +57,7 @@ permalink: /blog/
                 </span>
               </a>
             </li>
-            <li class="col-sm-4"><a href="#">Contact</a></li>
+            <li class="col-sm-4"><a href="#menu" class="menu-link">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -125,7 +132,7 @@ permalink: /blog/
                         {% else %}
                         {{ words | divided_by:180 }} mins
                         {% endif %}
-                        
+
                         {% if post.tags %}
                           <br>
                           {% for tag in post.tags %}
@@ -150,6 +157,7 @@ permalink: /blog/
     <!-- This following line is needed in case of using the default easing option or when using another
      one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
     <script src="{{ "/content/lib/fullpage.js/vendors/jquery.easings.min.js" | prepend: site.baseurl }}"></script>
+    <script src="/content/lib/bigslide/bigSlide.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -164,6 +172,12 @@ permalink: /blog/
           var content = node.html();
           var newHtml = content.replace(/^(\S+\s\S+\s\S+)/, "<strong>$1</strong>");
           node.html(newHtml);
+        });
+
+        $('.menu-link')
+        .bigSlide({
+          "side":"right",
+          "easyClose":"true",
         });
     });
     </script>

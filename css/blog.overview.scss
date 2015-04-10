@@ -249,3 +249,28 @@ li.logo {
 	color: #A1BAB7;
 	text-decoration: none;
 }
+
+.panel {
+    position: fixed;
+    right: -200px; /*left or right and the width of your navigation panel*/
+    width: 200px; /*should match the above value*/
+}
+
+.wrap {
+    position: relative;
+}
+
+.contact-pane {
+  background-color: #100F1C;
+  color: #ED3E5C;
+}
+
+.contact-pane.panel {
+  border-radius: 0px;
+}
+
+.contact-pane img{
+  width: 100px;
+  height: 100px;
+  background-color: #FFF;
+}
