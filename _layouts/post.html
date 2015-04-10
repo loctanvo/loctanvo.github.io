@@ -4,7 +4,7 @@
   {% include head.post.html %}
 
   <body>
-    <div class="container push wrap">
+    <div class="container">
       <section class="text-area">
         <div class="post-meta text-center hidden-xs">
           <div class="arrow-left"></div>
@@ -54,6 +54,23 @@
         <div class="text-center thanks">
           <div>Thanks for reading!</div>
           <div class="comment-toggler content-text text-center">Comments?</div>
+          <div class="comment-panel" style="display: none;">
+              <div class="text-area">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'loctanvo';
+                    var disqus_identifier = '{% if page.disqus-id %}{{ page.disqus-id }}{% else %}{{ page.id }}{% endif %}';
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+          </div>
         </div>
       </section>
       <div class="post-nav row text-center text-area">
@@ -80,32 +97,12 @@
       <hr class="post-nav-separator">
       {% include footer.html %}
     </div>
-    <div>
-      <div id="menu" class="panel">
-        <div class=" text-area">
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-              /* * * CONFIGURATION VARIABLES * * */
-              var disqus_shortname = 'loctanvo';
-              var disqus_identifier = '{% if page.disqus-id %}{{ page.disqus-id }}{% else %}{{ page.id }}{% endif %}';
-              /* * * DON'T EDIT BELOW THIS LINE * * */
-              (function() {
-                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-              })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-        </div>
-      </div>
-    </div>
   </body>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script src="/content/lib/prism/prism.js"></script>
-  <script src="/content/lib/bigslide/bigSlide.min.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -115,22 +112,15 @@
   <![endif]-->
   <script>
   $(document).ready(function() {
-
-      var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-      var discussAreaWidth = Math.max(0.5*w, 300);
-
-      $('.comment-toggler')
-      .bigSlide({
-        "side":"right",
-        "easyClose":"true",
-        "menuWidth": discussAreaWidth+"px"
-      });
-
       $("article > p").each(function(){
         var node = $(this);
         var content = node.html();
         var newHtml = content.replace(/^(\S+\s\S+\s\S+)/, "<strong>$1</strong>");
         node.html(newHtml);
+      });
+
+      $('.comment-toggler').click(function(){
+        $('.comment-panel').slideToggle(800);
       });
   });
   </script>
