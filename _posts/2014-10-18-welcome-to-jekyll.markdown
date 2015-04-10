@@ -82,6 +82,11 @@ Ut metus velit, efficitur hendrerit dolor eget, dictum posuere metus. Curabitur 
 
 Ut metus velit, efficitur hendrerit dolor eget, dictum posuere metus. Curabitur ut erat nec arcu scelerisque luctus vitae at erat. Nulla vitae eros at massa porta tincidunt ac at enim. Aenean cursus tortor id sem ullamcorper, non tempor mauris hendrerit. Integer in velit eu leo mattis pretium nec at ex. Vivamus eu velit sit amet nulla pharetra scelerisque. Fusce feugiat sit amet lorem vel facilisis. In iaculis fringilla nisl dictum ultrices. Vestibulum tempor ligula a sem volutpat viverra. Curabitur a congue ipsum. Cras fringilla vel tortor eu consequat. Ut consequat molestie mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
+<!-- ![Alt text](https://download.unsplash.com/photo-1423483641154-5411ec9c0ddf) -->
+<div class="wide">
+  <img src="https://download.unsplash.com/photo-1423483641154-5411ec9c0ddf"/>
+</div>
+
 Ut metus velit, efficitur hendrerit dolor eget, dictum posuere metus. Curabitur ut erat nec arcu scelerisque luctus vitae at erat. Nulla vitae eros at massa porta tincidunt ac at enim. Aenean cursus tortor id sem ullamcorper, non tempor mauris hendrerit. Integer in velit eu leo mattis pretium nec at ex. Vivamus eu velit sit amet nulla pharetra scelerisque. Fusce feugiat sit amet lorem vel facilisis. In iaculis fringilla nisl dictum ultrices. Vestibulum tempor ligula a sem volutpat viverra. Curabitur a congue ipsum. Cras fringilla vel tortor eu consequat. Ut consequat molestie mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
 
