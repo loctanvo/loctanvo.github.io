@@ -261,8 +261,26 @@ li.logo {
 }
 
 .contact-pane {
+  display: table;
+}
+
+.contact-pane .contact-pane-wrapper{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.contact-pane, .contact-pane a {
   background-color: #100F1C;
   color: #ED3E5C;
+  font-family: $bebas-stack;
+}
+
+.contact-pane a {
+  font-size: 36px;
+}
+
+.contact-pane a:hover {
+  color: #F5F5F5;
 }
 
 .contact-pane.panel {
@@ -272,5 +290,11 @@ li.logo {
 .contact-pane img{
   width: 100px;
   height: 100px;
-  background-color: #FFF;
+  margin: 25px auto;
+  /*background-color: #F5F5F5;*/
+  border: 1px solid;
+}
+
+.contact-pane li {
+  margin: 20px;
 }
