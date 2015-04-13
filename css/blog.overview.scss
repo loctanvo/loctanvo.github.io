@@ -276,11 +276,12 @@ li.logo {
 }
 
 .contact-pane a {
-  font-size: 36px;
+  font-size: 14px;
+  margin: 0 5px;
 }
 
 .contact-pane a:hover {
-  color: #F5F5F5;
+  color: #FFF;
 }
 
 .contact-pane.panel {
@@ -290,10 +291,20 @@ li.logo {
 .contact-pane img{
   width: 100px;
   height: 100px;
-  margin: 25px auto;
-  border: 1px solid;
+  margin: 0 auto 35px auto;
+  background-color: #F5F5F5;
 }
 
-.contact-pane li {
+.contact-pane .about-text {
+  color: #FFF;
   margin: 20px;
+  font-family: "Roboto Slab";
+  font-weight: 100;
+  line-height: 1.3em;
+}
+
+.contact-pane h2 {
+  font-family: $bebas-stack;
+  font-size:  42px;
+  font-weight: bold;
 }
