@@ -1,15 +1,127 @@
----
-layout: default
----
-<div class="post">
+<!DOCTYPE html>
+<html lang="en">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+  {% include head.post.html %}
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+  <body>
+    <div class="container">
+      <section class="text-area">
+        <div class="post-meta text-center hidden-xs">
+          <div class="arrow-left"></div>
+          <img class="img-circle" src="/content/images/Loc_square_brighter.png" alt="Image of me (Loc Tan Vo)">
+          <div class="post-meta-info text-left">
+            {% if page.author %}<div>{{ page.author }}</div>{% endif %}
+            {% if page.date %}<div>{{ page.date | date: "%-d %b %Y" }}</div>{% endif %}
+            <div>
+              <br>
+              <div>
+                <strong>Reading time:</strong>
+              </div>
+              {% assign words = page.content | number_of_words %}
+              {% if words < 360 %}
+              1 min
+              {% else %}
+              {{ words | divided_by:180 }} mins
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <header class="paragraph-width center-block">
+          <h1 class="text-center">{{ page.title }}</h1>
+          <div class="tags text-center">
+            {% if page.tags %}
+              {% for tag in page.tags %}
+                <span class="tag">#{{ tag }}</span>
+              {% endfor %}
+            {% endif %}
+          </div>
+          <div class="post-meta-info meta-visible-xs text-center">
+            {% if page.author %}{{ page.author }} • {% endif %}
+            {% if page.date %}{{ page.date | date: "%-d %b %Y" }} • {% endif %}
+            {% assign words = page.content | number_of_words %}
+            {% if words < 360 %}
+            1 min
+            {% else %}
+            {{ words | divided_by:180 }} mins
+            {% endif %}
+          </div>
+        </header>
+        <hr class="article-separator">
+        <article>
+          {{content}}
+        </article>
+        <hr class="article-separator">
+        <div class="text-center thanks">
+          <div>Thanks for reading!</div>
+          <div class="comment-toggler content-text text-center">Comments?</div>
+          <div class="comment-panel" style="display: none;">
+              <div class="text-area">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'loctanvo';
+                    var disqus_identifier = '{% if page.disqus-id %}{{ page.disqus-id }}{% else %}{{ page.id }}{% endif %}';
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="post-nav row text-center text-area">
+        <div class="col-xs-3">
+          {% if page.previous.url %}
+          <a href="{{page.previous.url}}" rel="prev" title="{{page.previous.title}}">
+            <span class="nav-title">Previous</span>
+            <span class="nav-link">{{page.previous.title | truncatewords:5}}</span>
+          </a>
+          {% endif %}
+        </div>
+        <div class="col-xs-6">
+          <a class="nav-title" href="/blog">Back to overview</a>
+        </div>
+        <div class="col-xs-3">
+          {% if page.next.url %}
+          <a href="{{page.next.url}}" rel="next" title="{{page.next.title}}">
+            <span class="nav-title">Next</span>
+            <span class="nav-link">{{page.next.title | truncatewords:5}}</span>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+      <hr class="post-nav-separator">
+      {% include footer.html %}
+    </div>
+  </body>
 
-</div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="/content/lib/prism/prism.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <script>
+  $(document).ready(function() {
+      $("article > p").each(function(){
+        var node = $(this);
+        var content = node.html();
+        var newHtml = content.replace(/^(\S+\s\S+\s\S+)/, "<strong>$1</strong>");
+        node.html(newHtml);
+      });
+
+      $('.comment-toggler').click(function(){
+        $('.comment-panel').slideToggle(800);
+      });
+  });
+  </script>
+</html>

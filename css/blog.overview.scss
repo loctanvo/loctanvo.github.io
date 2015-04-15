@@ -1,0 +1,311 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import 'base';
+
+body {
+  background: #F5F5F5;
+}
+
+h1.blog-title{
+		font-family: 'Helvetica Neue', 'Raleway', sans-serif;
+		display: block;
+		font-size: 42px;
+		font-weight: lighter;
+		margin: 50px inherit;
+		color: #636363;
+    text-transform: capitalize;
+}
+
+nav {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Helvetica Neue', 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 30px;
+  color: #636363;
+  text-decoration: none;
+  border: 1px solid #AAA;
+  font-weight: 300;
+}
+nav.collapsed-navbar {
+  background-color: transparent;
+  border:none;
+  margin: 0;
+}
+
+nav.collapsed-navbar a {
+  border:none;
+}
+
+nav.collapsed-navbar img {
+  height: 30px;
+  width: 30px;
+  background-color: #FFF;
+}
+
+nav.collapsed-navbar #navbar-collapse{
+  background-color: #FFF;
+  overflow: hidden;
+}
+
+.menu-nav li{
+    padding-top: 45px;
+}
+
+.menu-nav a:hover{
+	color: #FFF;
+	background-color: #636363;
+	border: 1px solid #636363;
+  text-decoration: none;
+}
+
+li.logo {
+  padding-top: 0;
+}
+
+.logo a {
+  font-family: bebas-regular;
+  font-size: 24px;
+  font-weight: bold;
+  color: #F5F5F5;
+  text-decoration: none;
+}
+
+.logo a:hover{
+	background-color: #636363;
+	border: 2px solid #636363;
+  text-decoration: none;
+  color: #636363;
+}
+
+.logo .line span {
+  width: 33.33%;
+  margin: 0 8px;
+}
+
+.logo-outer{
+  width:150px;
+  height: 150px;
+  background-color: #F5F5F5;
+  border: solid 2px #d6d6d6;
+}
+
+.logo-inner{
+  width: 140px;
+  height: 140px;
+  background-color: #d6d6d6;
+  display: block;
+  margin-top: -7px;
+  margin-left: -27px;
+}
+
+.logo-inner-text {
+  display: block;
+  padding-top: 18px;
+}
+
+.posts p {
+  max-width: 300px;
+  margin: 100px auto;
+}
+
+.posts .title{
+  font-family: bebas-regular;
+  font-size: 42px;
+  font-weight: bold;
+  color: #636363;
+}
+
+.posts .title a {
+  text-decoration: none;
+  color: #636363;
+}
+
+.posts .title a:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+  color: #000;
+}
+
+.mint {
+  background-color: #A1BAB7;
+}
+
+.orange{
+  background-color: #FD9C95;
+}
+
+.title .title-label {
+  font-size: 14px;
+  font-family: 'Helvetica Neue', 'Raleway', sans-serif;
+  font-weight: 100;
+  color: #000;
+}
+
+.posts .excerpt {
+  background-color: #FFFFFF;
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  line-height: 1.8em;
+  font-weight: 100;
+}
+
+.row-same-height {
+  display: table;
+  width: 100%;
+}
+
+.col-same-height {
+  display: table-cell;
+  float: none !important;
+}
+
+.col-align-middle {
+  vertical-align: middle;
+}
+
+.posts p.read-more-label{
+  margin-top: -80px;
+}
+
+.read-more-label a {
+  text-decoration: none;
+}
+
+.read-more-mint a{
+  color: #A1BAB7;
+}
+
+.read-more-orange a{
+  color: #FD9C95;
+}
+
+.read-more-label a:hover{
+  text-decoration: underline;
+}
+
+.title-separator {
+  width: 60px;
+  margin-top: -90px;
+  border-top: 1px solid #636363;
+}
+
+.arrow {
+  margin-left: -9px;
+  position: relative;
+  z-index: 1;
+}
+
+.arrow-up {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+
+	border-bottom: 5px solid black;
+}
+
+.arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+
+	border-top: 20px solid #f00;
+}
+
+.arrow-right {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid #FFF;
+  margin-left: 0px;
+  position: absolute;
+  z-index: 1;
+}
+
+.arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+
+	border-right:10px solid #FFF;
+}
+
+.social a {
+	color: #636363;
+}
+
+.social a:hover {
+	color: #A1BAB7;
+	text-decoration: none;
+}
+
+.panel {
+    position: fixed;
+    right: -200px; /*left or right and the width of your navigation panel*/
+    width: 200px; /*should match the above value*/
+}
+
+.wrap {
+    position: relative;
+}
+
+.contact-pane {
+  display: table;
+}
+
+.contact-pane .contact-pane-wrapper{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.contact-pane, .contact-pane a {
+  background-color: #636363;
+  color: #FD9C95;
+  font-family: $bebas-stack;
+}
+
+.contact-pane a {
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+.contact-pane a:hover {
+  color: #FFF;
+}
+
+.contact-pane.panel {
+  border-radius: 0px;
+}
+
+.contact-pane img{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 35px auto;
+  background-color: #F5F5F5;
+}
+
+.contact-pane .about-text {
+  color: #FFF;
+  margin: 20px;
+  font-family: "Roboto Slab";
+  font-weight: 100;
+  line-height: 1.3em;
+}
+
+.contact-pane h2 {
+  font-family: $bebas-stack;
+  font-size:  42px;
+  font-weight: bold;
+}

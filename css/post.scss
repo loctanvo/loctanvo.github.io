@@ -1,0 +1,234 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import 'base';
+
+$article-width: 75%;
+$paragraph-width: 500px;
+$small-device-width: 768px;
+$separator-color: #D6D6D6;
+$comment-area-width: 500px;
+
+body {
+  background: $smoke-white;
+  color: $default-text-color;
+}
+
+h1 {
+  font-family: $bebas-stack;
+  font-size: 4em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 36px;
+
+}
+
+h2, h3, h4{
+  font-family: $sans-serif-stack;
+  margin: 50px 20px;
+  text-align: center;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+
+blockquote {
+  background-color: #EEE;
+  border-color: $mint;
+  color: #000;
+}
+
+blockquote p {
+  font-style: italic;
+  margin: 10px auto !important;
+  font-family: "Lobster Two" !important;
+  font-size: 18px !important;
+}
+
+@media (min-width: 768px) {
+  h1{
+    font-size: 6em;
+  }
+}
+
+a{
+  color: $salmon;
+}
+
+a:hover {
+  color: $salmon;
+}
+
+.text-area {
+  background: $white;
+  margin: 30px auto;
+  padding: 30px 0px;
+  width: $article-width;
+}
+
+@media (max-width: 768px){
+  .text-area {
+    width: 100%;
+  }
+}
+
+.paragraph-width {
+  max-width: $paragraph-width;
+}
+
+.tags {
+  font-family: $bebas-stack;
+  font-size: 18px;
+}
+
+.tag {
+  padding: 0 5px;
+  color: $mint;
+}
+
+.article-separator {
+  width: 100px;
+  border-top: 2px solid $separator-color;
+  margin: 50px auto;
+}
+
+article p {
+  max-width: $paragraph-width;
+  margin: 30px auto;
+  padding: 0 10px;
+  text-align: justify;
+}
+
+article p, .content-text {
+  font-family: $font-long-text;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.8em;
+}
+
+.thanks {
+  font-family: $font-long-text;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.post-meta {
+  font-family: "Courier New";
+  position: fixed;
+  margin-left: -150px;
+  margin-top: 75px;
+}
+
+.post-meta img {
+  height: 100px;
+  width: 100px;
+  background: $white;
+}
+
+.post-meta .post-meta-info{
+  margin-top: 10px;
+}
+
+.arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right:15px solid #FFF;
+
+  margin-left: 135px;
+  margin-top: 35px;
+  position: absolute;
+}
+
+.post-meta-info.meta-visible-xs{
+  font-family: "Courier New";
+  display: none !important;
+  margin-top: 10px;
+}
+
+.post-meta-info span{
+  padding-left:  5px;
+}
+
+@media (max-width: 810px){
+  .post-meta{
+    display: none;
+  }
+
+  .post-meta-info.meta-visible-xs{
+    display: block !important;
+  }
+}
+
+@media (min-width: 810px) and (max-width: 860px){
+  .post-meta {
+    margin-left: -130px;
+  }
+
+  .arrow-left {
+      margin-left: 115px;
+  }
+}
+
+@media (min-width: 860px) and (max-width: 1020px){
+  .post-meta {
+      margin-left: -135px;
+  }
+
+  .arrow-left {
+      margin-left: 120px;
+  }
+}
+
+.post-nav-separator {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-color: $separator-color;
+}
+
+.post-nav{
+  font-family: $sans-serif-stack;
+  background-color: $smoke-white;
+}
+
+.post-nav a{
+  color: $default-text-color;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.post-nav a:hover, .comment-toggler:hover{
+  color: $salmon;
+  background-color: #EEE;
+  text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.post-nav .nav-title{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 100;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.post-nav .nav-link{
+  font-weight: bold;
+  font-family: bebas-regular;
+  letter-spacing: 1px;
+}
+
+.comment-toggler {
+  padding: 10px;
+}
+
+.wide img, p img {
+  width: 100%;
+}

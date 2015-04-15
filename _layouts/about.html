@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include head.html %}
+  {% include head.about.html %}
 
   <body>
       <div class="container-liquid site-wrapper">
@@ -36,11 +36,11 @@
 
     		function toggleMoreArea(){
     			$('.text-area.more').toggleClass('separator');
-    			
+
     			$('.text-area.more').each(function( index, element ){
 					var dir = $(element).attr('data-drop-direction');
 					$(element).toggle('drop', {direction: dir}, 800);
-    			});    			
+    			});
     		}
 		});
 	</script>

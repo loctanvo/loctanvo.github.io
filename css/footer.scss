@@ -1,0 +1,21 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import 'base';
+
+.site-footer {
+  font-family: "Courier New", "Roboto Slab";
+  color: #636363;
+  margin: 50px;
+  font-size: 12px;
+}
+
+.site-footer .social a {
+	color: #636363;
+}
+
+.site-footer .social a:hover {
+	color: #A1BAB7;
+	text-decoration: none;
+}

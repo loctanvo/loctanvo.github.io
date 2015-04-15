@@ -1,9 +1,34 @@
 /**
+ * Code formatting
+ */
+ $spacing-unit: 0px;
+
+pre,
+code {
+    font-size: 15px;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+    background-color: #000;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/**
  * Syntax highlighting styles
  */
 .highlight {
     background: #fff;
-    @extend %vertical-rhythm;
 
     .c     { color: #998; font-style: italic } // Comment
     .err   { color: #a61717; background-color: #e3d2d2 } // Error

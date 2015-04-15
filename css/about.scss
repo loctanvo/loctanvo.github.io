@@ -2,6 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+@import 'base';
+
 html, body{
 	color: #636363;
 	height: 100%;
@@ -42,9 +44,6 @@ h2 small{
 		color: #636363;
 }
 
-ul, li {
-	list-style: none;
-}
 .intro {
 	position: fixed;
 }
@@ -65,7 +64,7 @@ ul, li {
 	display: table-cell;
 }
 
-.about-nav{		
+.about-nav{
     list-style: none;
     margin: 60px 0 0 0;
     padding: 0;
