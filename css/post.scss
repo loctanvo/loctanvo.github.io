@@ -31,7 +31,7 @@ h2, h3, h4{
   font-family: $sans-serif-stack;
   margin: 50px 20px;
   text-align: center;
-  font-weight: 300;
+  font-weight: 100;
   text-transform: capitalize;
 }
 
@@ -87,6 +87,11 @@ a:hover {
 .tag {
   padding: 0 5px;
   color: $mint;
+}
+
+.hash-tag {
+  font-weight: bold;
+  color: $default-text-color;
 }
 
 .article-separator {
