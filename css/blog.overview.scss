@@ -71,7 +71,7 @@ li.logo {
 }
 
 .logo a {
-  font-family: bebas-regular;
+  font-family: $bebas-stack;
   font-size: 24px;
   font-weight: bold;
   color: #F5F5F5;
@@ -126,6 +126,7 @@ li.logo {
 .posts .title a {
   text-decoration: none;
   color: #444;
+  text-transform: uppercase;
 }
 
 .posts .title a:hover {
