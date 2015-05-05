@@ -253,8 +253,8 @@ li.logo {
 
 .panel {
     position: fixed;
-    right: -200px; /*left or right and the width of your navigation panel*/
-    width: 200px; /*should match the above value*/
+    right: -300px; /*left or right and the width of your navigation panel*/
+    width: 300px; /*should match the above value*/
 }
 
 .wrap {
@@ -302,6 +302,7 @@ li.logo {
   font-family: "Roboto Slab";
   font-weight: 300;
   line-height: 1.3em;
+  text-align: justify;
 }
 
 .contact-pane h2 {
