@@ -13,9 +13,10 @@ h1.blog-title{
 		display: block;
 		font-size: 42px;
 		font-weight: lighter;
-		margin: 50px inherit;
+		margin: 50px auto;
 		color: #636363;
     text-transform: capitalize;
+    max-width: 75%;
 }
 
 nav {
@@ -37,7 +38,7 @@ nav a {
 nav.collapsed-navbar {
   background-color: transparent;
   border:none;
-  margin: 0;
+  margin-top: 40px;
 }
 
 nav.collapsed-navbar a {
@@ -48,6 +49,11 @@ nav.collapsed-navbar img {
   height: 30px;
   width: 30px;
   background-color: #FFF;
+}
+
+nav.collapsed-navbar img:hover {
+  background-color: transparent;
+  border: 1px solid white;
 }
 
 nav.collapsed-navbar #navbar-collapse{
