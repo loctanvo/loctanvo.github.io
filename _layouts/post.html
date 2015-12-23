@@ -119,10 +119,12 @@
   <script>
   $(document).ready(function() {
       $("article > p").each(function(){
-        // var node = $(this);
-        // var content = node.html();
-        // var newHtml = content.replace(/^(\S+\s\S+\s\S+)/, "<strong>$1</strong>");
-        // node.html(newHtml);
+        var node = $(this);
+        if(!node.html().startsWith("<code>")){
+          var content = node.html();
+          var newHtml = content.replace(/^(\S+\s)/, "<strong>$1</strong>");
+          node.html(newHtml); 
+        }
       });
 
       $('.comment-toggler').click(function(){

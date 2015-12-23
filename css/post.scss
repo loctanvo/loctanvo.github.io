@@ -46,10 +46,15 @@ blockquote p {
   margin: 10px auto !important;
   font-family: "Lobster Two" !important;
   font-size: 18px !important;
-  
-  strong {
+}
+
+strong {
     color: #000;
-  }
+    font-size: 1.2em;
+}
+
+.origin-text {
+  font-size: 1em;
 }
 
 @media (min-width: 768px) {
@@ -139,6 +144,10 @@ article p, .content-text {
 
 .post-meta .post-meta-info{
   margin-top: 10px;
+  
+  strong{
+    font-size: 1em;
+  }
 }
 
 .arrow-left {
@@ -240,9 +249,4 @@ article p, .content-text {
 
 .wide img, p img {
   width: 100%;
-}
-
-.origin-text {
-  font-size: 1em;
-  color: red;
 }

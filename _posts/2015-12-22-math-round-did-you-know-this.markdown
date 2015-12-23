@@ -13,6 +13,7 @@ When rounding decimals to integers, we expected `Math.Round()` to behave like th
 
 
 `2.4 -> 2`
+<br>
 `2.5 -> 3`
 
 At least that's what we learned at school. Well, it turned out that we were wrong. Here is a tiny program that demonstrates this.
