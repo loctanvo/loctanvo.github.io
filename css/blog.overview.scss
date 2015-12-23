@@ -13,9 +13,10 @@ h1.blog-title{
 		display: block;
 		font-size: 42px;
 		font-weight: lighter;
-		margin: 50px inherit;
+		margin: 50px auto;
 		color: #636363;
     text-transform: capitalize;
+    max-width: 75%;
 }
 
 nav {
@@ -37,7 +38,7 @@ nav a {
 nav.collapsed-navbar {
   background-color: transparent;
   border:none;
-  margin: 0;
+  margin-top: 40px;
 }
 
 nav.collapsed-navbar a {
@@ -48,6 +49,11 @@ nav.collapsed-navbar img {
   height: 30px;
   width: 30px;
   background-color: #FFF;
+}
+
+nav.collapsed-navbar img:hover {
+  background-color: transparent;
+  border: 1px solid white;
 }
 
 nav.collapsed-navbar #navbar-collapse{
@@ -144,10 +150,8 @@ li.logo {
 }
 
 .title .title-label {
-  font-size: 14px;
-  font-family: 'Helvetica Neue', 'Raleway', sans-serif;
+  font-size: 16px;
   font-weight: 300;
-  color: #000;
 }
 
 .posts .excerpt {
@@ -301,8 +305,8 @@ li.logo {
   margin: 20px;
   font-family: "Roboto Slab";
   font-weight: 300;
-  line-height: 1.3em;
-  text-align: justify;
+  line-height: 1.6em;
+  text-align: center;
 }
 
 .about-text .about-text-body{
@@ -315,4 +319,12 @@ li.logo {
   font-family: $bebas-stack;
   font-size:  42px;
   font-weight: bold;
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    .posts .excerpt p{
+      font-weight: 100;
+    } 
 }

@@ -18,10 +18,10 @@
                 <strong>Reading time:</strong>
               </div>
               {% assign words = page.content | number_of_words %}
-              {% if words < 360 %}
+              {% if words < 280 %}
               1 min
               {% else %}
-              {{ words | divided_by:180 }} mins
+              {{ words | divided_by:140 }} mins
               {% endif %}
             </div>
           </div>
@@ -39,15 +39,21 @@
             {% if page.author %}{{ page.author }} • {% endif %}
             {% if page.date %}{{ page.date | date: "%-d %b %Y" }} • {% endif %}
             {% assign words = page.content | number_of_words %}
-            {% if words < 360 %}
+            {% if words < 280 %}
             1 min
             {% else %}
-            {{ words | divided_by:180 }} mins
+            {{ words | divided_by:140 }} mins
             {% endif %}
           </div>
         </header>
         <hr class="article-separator">
         <article>
+          {% if page.origin-url %}
+          <p class="text-center origin-text">
+            <em>This post first appeared on the <a href="{{page.origin-url}}">Forse company blog</a>.</em>
+          </p>
+          {% endif %}
+          
           {{content}}
         </article>
         <hr class="article-separator">
@@ -114,9 +120,11 @@
   $(document).ready(function() {
       $("article > p").each(function(){
         var node = $(this);
-        var content = node.html();
-        var newHtml = content.replace(/^(\S+\s\S+\s\S+)/, "<strong>$1</strong>");
-        node.html(newHtml);
+        if(!node.html().startsWith("<")){
+          var content = node.html();
+          var newHtml = content.replace(/^(\S+\s)/, "<strong>$1</strong>");
+          node.html(newHtml); 
+        }
       });
 
       $('.comment-toggler').click(function(){

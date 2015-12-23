@@ -3,6 +3,7 @@
 ---
 
 @import 'base';
+@import 'gist';
 
 $article-width: 75%;
 $paragraph-width: 500px;
@@ -38,7 +39,6 @@ h2, h3, h4{
 blockquote {
   background-color: #EEE;
   border-color: $mint;
-  color: #000;
 }
 
 blockquote p {
@@ -46,6 +46,15 @@ blockquote p {
   margin: 10px auto !important;
   font-family: "Lobster Two" !important;
   font-size: 18px !important;
+}
+
+strong {
+    color: #000;
+    font-size: 1.2em;
+}
+
+.origin-text {
+  font-size: 1em;
 }
 
 @media (min-width: 768px) {
@@ -114,6 +123,14 @@ article p, .content-text {
   line-height: 1.8em;
 }
 
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    article p, .content-text, h2, h3, h4{
+      font-weight: 100;
+    } 
+}
+
 .thanks {
   font-family: $font-long-text;
   font-size: 20px;
@@ -135,6 +152,10 @@ article p, .content-text {
 
 .post-meta .post-meta-info{
   margin-top: 10px;
+  
+  strong{
+    font-size: 1em;
+  }
 }
 
 .arrow-left {
