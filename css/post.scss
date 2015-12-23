@@ -123,6 +123,14 @@ article p, .content-text {
   line-height: 1.8em;
 }
 
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    article p, .content-text, h2, h3, h4{
+      font-weight: 100;
+    } 
+}
+
 .thanks {
   font-family: $font-long-text;
   font-size: 20px;
