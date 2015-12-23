@@ -3,6 +3,7 @@
 ---
 
 @import 'base';
+@import 'gist';
 
 $article-width: 75%;
 $paragraph-width: 500px;
@@ -38,7 +39,6 @@ h2, h3, h4{
 blockquote {
   background-color: #EEE;
   border-color: $mint;
-  color: #000;
 }
 
 blockquote p {
@@ -46,6 +46,10 @@ blockquote p {
   margin: 10px auto !important;
   font-family: "Lobster Two" !important;
   font-size: 18px !important;
+  
+  strong {
+    color: #000;
+  }
 }
 
 @media (min-width: 768px) {
@@ -236,4 +240,9 @@ article p, .content-text {
 
 .wide img, p img {
   width: 100%;
+}
+
+.origin-text {
+  font-size: 1em;
+  color: red;
 }

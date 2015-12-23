@@ -1,0 +1,45 @@
+/**
+ * Default font-stack
+ */
+
+.gist{
+	.gist-file {
+		border: none !important;
+		border-radius: 0 !important;
+		border-left: 5px solid #A1BAB7 !important;
+		padding-top: 10px;
+		background-color: $quote-background;
+	}
+	
+	.gist-data {
+		border: none !important;
+		border-radius: 0 !important;
+	}
+	
+	.gist-meta {
+		background-color: $quote-background !important;
+	}
+	
+	.blob-num {
+		border-right: 1px solid #FFF !important;
+	}
+	
+	.blob-wrapper {
+		border-radius: 0 !important;
+	}
+	
+	tbody {
+		background-color: $quote-background;
+		
+		tr:first-child td {
+			// margin-top: 15px !important;
+		}
+	}
+	
+	.blob-code {
+		vertical-align: middle !important;
+	}
+	
+}
+
+

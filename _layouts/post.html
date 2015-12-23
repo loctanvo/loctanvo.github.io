@@ -48,6 +48,12 @@
         </header>
         <hr class="article-separator">
         <article>
+          {% if page.origin-url %}
+          <p class="text-center origin-text">
+            <em>This post first appeared on the <a href="{{page.origin-url}}">Forse company blog</a>.</em>
+          </p>
+          {% endif %}
+          
           {{content}}
         </article>
         <hr class="article-separator">
@@ -113,10 +119,10 @@
   <script>
   $(document).ready(function() {
       $("article > p").each(function(){
-        var node = $(this);
-        var content = node.html();
-        var newHtml = content.replace(/^(\S+\s\S+\s\S+)/, "<strong>$1</strong>");
-        node.html(newHtml);
+        // var node = $(this);
+        // var content = node.html();
+        // var newHtml = content.replace(/^(\S+\s\S+\s\S+)/, "<strong>$1</strong>");
+        // node.html(newHtml);
       });
 
       $('.comment-toggler').click(function(){
