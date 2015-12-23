@@ -18,10 +18,10 @@
                 <strong>Reading time:</strong>
               </div>
               {% assign words = page.content | number_of_words %}
-              {% if words < 360 %}
+              {% if words < 280 %}
               1 min
               {% else %}
-              {{ words | divided_by:180 }} mins
+              {{ words | divided_by:140 }} mins
               {% endif %}
             </div>
           </div>
@@ -39,10 +39,10 @@
             {% if page.author %}{{ page.author }} • {% endif %}
             {% if page.date %}{{ page.date | date: "%-d %b %Y" }} • {% endif %}
             {% assign words = page.content | number_of_words %}
-            {% if words < 360 %}
+            {% if words < 280 %}
             1 min
             {% else %}
-            {{ words | divided_by:180 }} mins
+            {{ words | divided_by:140 }} mins
             {% endif %}
           </div>
         </header>
@@ -120,7 +120,7 @@
   $(document).ready(function() {
       $("article > p").each(function(){
         var node = $(this);
-        if(!node.html().startsWith("<code>")){
+        if(!node.html().startsWith("<")){
           var content = node.html();
           var newHtml = content.replace(/^(\S+\s)/, "<strong>$1</strong>");
           node.html(newHtml); 

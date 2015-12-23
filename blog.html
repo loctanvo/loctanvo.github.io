@@ -93,10 +93,10 @@ permalink: /blog/
                         {{ post.date | date_to_long_string }}
                         <br>
                         {% assign words = post.content | number_of_words %}
-                        {% if words < 360 %}
+                        {% if words < 280 %}
                         1 min
                         {% else %}
-                        {{ words | divided_by:180 }} mins
+                        {{ words | divided_by:140 }} mins
                         {% endif %}
                         {% if post.tags %}
                           <br>
@@ -136,10 +136,10 @@ permalink: /blog/
                         {{ post.date | date_to_long_string }}
                         <br>
                         {% assign words = post.content | number_of_words %}
-                        {% if words < 360 %}
+                        {% if words < 280 %}
                         1 min
                         {% else %}
-                        {{ words | divided_by:180 }} mins
+                        {{ words | divided_by:140 }} mins
                         {% endif %}
 
                         {% if post.tags %}

@@ -12,9 +12,8 @@ Our project is delivering calculation heavy software used by engineers. We are p
 When rounding decimals to integers, we expected `Math.Round()` to behave like this:
 
 
-`2.4 -> 2`
-<br>
-`2.5 -> 3`
+    2.4 -> 2
+    2.5 -> 3
 
 At least that's what we learned at school. Well, it turned out that we were wrong. Here is a tiny program that demonstrates this.
 
@@ -22,9 +21,7 @@ At least that's what we learned at school. Well, it turned out that we were wron
 
 This was the outcome:
 
-<div class="wide">
-  <img src="http://blog.forse.no/wp-content/uploads/2015/11/math.round_.default.png" alt="math.round.default" />
-</div>
+![math.round.default](http://blog.forse.no/wp-content/uploads/2015/11/math.round_.default.png)
 
 So, here we see that <code>2.5</code> gets rounded to <code>2</code> rather than <code>3</code>. However, for <code>1.5</code> and <code>3.5</code>, it's exactly how we expected it to be.
 
@@ -43,8 +40,6 @@ So, in order to get <code>Math.Round()</code> to behave how we expected it to be
 
 This will give the following outcome:
 
-<div class="wide">
-  <img src="http://blog.forse.no/wp-content/uploads/2015/11/math.round_.roundingAwayFromZero.png" alt="math.round.roundingAwayFromZero" />
-</div>
+![math.round.roundingAwayFromZero](http://blog.forse.no/wp-content/uploads/2015/11/math.round_.roundingAwayFromZero.png)
 
 Which is exactly what we wanted.
