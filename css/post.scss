@@ -109,14 +109,17 @@ a:hover {
   margin: 50px auto;
 }
 
-article p {
+article p, article ul {
   max-width: $paragraph-width;
   margin: 30px auto;
   padding: 0 10px;
+}
+
+article p {
   text-align: justify;
 }
 
-article p, .content-text {
+article p, .content-text, article ul {
   font-family: $font-long-text;
   font-size: 16px;
   font-weight: 300;
@@ -126,7 +129,7 @@ article p, .content-text {
 @media 
 (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi) { 
-    article p, .content-text, h2, h3, h4{
+    article p, .content-text, h2, h3, h4, article ul{
       font-weight: 100;
     } 
 }
